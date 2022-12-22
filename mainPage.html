@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Title -->
+    <title>Blajev Style</title>
+    <!-- Meta Links -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TailWindCSS File -->
+    <link rel="stylesheet" href="/dist/output.css">
+    <script src="javascript.js"></script>
+</head>
+<body class="bg-[#f3f4f5]"> 
+    <!--=============/ 
+     [1.] Landing Page
+    /==============-->
+    <header id="header" class="relative h-[800px] w-full bg-gradient-to-tr from-[#D6D58E] via-[#DFCA55] to-[#9FC131]">
+        <!-- TopBar Container -->
+        <div id="topBar" class="flex items-center justify-between p-6">
+            <!-- [1] Logo -->
+            <h1 id="topBar__logo" class="p-1 font-mono text-3xl font-bold text-black border-2 border-black">Blajev Style</h1>
+            <!-- [2] Search Form - [START] -->
+            <form id="topBar__search--form" class="items-center hidden md:flex">
+                <!-- Search Icon with Input Field -->
+                <div class="relative w-full">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    </div>
+                    <input type="text" id="search" class="w-96 pl-10 p-2.5" placeholder="| Search for a product" required>
+                </div>
+                <!-- Search Button -->
+                <button type="submit" class="p-3 text-sm font-medium text-white bg-black bg-opacity-40 hover:bg-opacity-60 focus:ring-4 focus:outline-none">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+                </button>
+            </form>
+            <!-- [2] Search Form - [END] -->
+
+            <!-- [3] Shopping Cart & Favorites Buttons - [START] -->
+            <div class="flex gap-4">
+                <a id="shopping__cart" href="">
+                    <svg class="text-white transition duration-100 ease-in-out delay-150 bg-black bg-opacity-25 rounded-lg shadow-xl cursor-pointer hover:-translate-y-1 hover:scale-100"
+                    width="40" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 26 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.75 7.75h11.5l-1.637 6.958a2 2 0 0 1-1.947 1.542h-4.127a2 2 0 0 1-1.933-1.488L7.75 7.75Zm0 0-.75-3H4.75">
+                    </path>
+                    <path fill="currentColor" stroke="none" d="M10 18a1 1 0 1 0 0 2 1 1 0 1 0 0-2z"></path>
+                    <path fill="currentColor" stroke="none" d="M17 18a1 1 0 1 0 0 2 1 1 0 1 0 0-2z"></path>
+                </svg>  
+                </a>
+                <svg class="text-white transition duration-100 ease-in-out delay-150 bg-black bg-opacity-25 rounded-lg shadow-xl cursor-pointer hover:-translate-y-1 hover:scale-100"
+                width="40" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" viewBox="-3 0 30 25" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                </path>
+            </svg>
+            </div>
+            <!-- [3] Shopping Cart & Favorites Buttons - [END] -->
+
+            <!-- [4] Hamburger Icon - [START] -->
+            <div class="flex items-center md:hidden">
+                <div class="space-y-2">
+                    <span class="block w-8 h-0.5 bg-black animate-pulse"></span>
+                    <span class="block w-8 h-0.5 bg-black animate-pulse"></span>
+                    <span class="block w-8 h-0.5 bg-black animate-pulse"></span>
+                </div>
+            </div>
+        </div>
+            <!-- [4] Hamburger Icon - [END] -->
+
+        <!-- Navigation -->
+        <nav id="navigation" class="justify-center hidden md:flex">
+            <ul class="flex justify-around gap-6 text-black font-semibold pl-[104px]">
+                <a href="#">
+                    <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Home</li>
+                </a>
+                <li>|</li>
+                <a href="#">
+                    <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Shop</li>
+                </a>
+                <li>|</li>
+                <a href="#">
+                    <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">About</li>
+                </a>
+                <li>|</li>
+                <a href="#">
+                    <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Contact</li>
+                </a>
+            </ul>
+        </nav>
+
+        <!-- Header Text - Season, New Collection, Perfect Style & Button -->
+        <div class="flex flex-col items-center ml-[100px] mt-[100px] leading-[70px] max-[790px]:ml-[0px]">
+            <h2 id="season" class="text-[50px]">Spring 2023</h2>
+            <h1 id="new__collection" class="text-[75px]">New Collection</h1>
+            <p id="collection__text" class="text-[30px]">Find the Perfect Style for You</p>
+            <a href="#"><button  id="shopButton" class="w-[150px] h-auto text-[18px] bg-white rounded-full leading-[50px]">Shop Now</button></a>
+        </div>
+
+        <!-- Wave SVG -->
+        <div id="wave__svg" class="absolute bottom-0 left-0 right-0">
+            <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#f3f4f5" fill-opacity="1" d="M0,128L48,138.7C96,149,192,171,288,197.3C384,224,480,256,576,261.3C672,267,768,245,864,224C960,203,1056,181,1152,154.7C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </header>
+
+    <!--=============/ 
+     [2.] Main Content
+    /==============-->
+    <main class="relative">
+        <!-- [1.] Gender Section -->
+        <section class="flex justify-center items-center z-[-1] h-[600px] max-[2000px]:h-[500px] max-[1600px]:h-[400px] 
+        max-[1376px]:flex-col max-[1376px]:h-[700px]">
+            <!-- Male Gender Container -->
+            <div class="relative">
+                <!-- Model Img -->
+                <img class="w-[600px] max-[2000px]:w-[500px] max-[1600px]:w-[400px] rounded-tl-xl min-[1376px]:rounded-bl-xl max-[1376px]:rounded-tr-xl" src="images/malemodel.jpg" alt="Male Model">
+                <!-- Proceed Button -->
+                <a id="firstArrowButton" class="absolute bottom-[13px] right-[15px] text-white border-2 rounded-full" href="#">
+                    <svg class="w-[40px] h-auto pl-[3px] max-[2000px]:w-[35px] max-[1600px]:w-[30px]" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9 18 6-6-6-6"></path>
+                  </svg></a>
+                 <!--Model Img Text  -->
+                <p class="absolute bottom-[15px] left-[20px] text-white text-xl max-[2000px]:text-lg">
+                Men</p>
+            </div>
+            <!-- Female Gender Container -->
+            <div class="relative">
+                <!-- Model Img -->
+                <img class="w-[600px] max-[2000px]:w-[500px] max-[1600px]:w-[400px] min-[1376px]:rounded-tr-xl rounded-br-xl max-[1376px]:rounded-bl-xl" src="/images/femalemodel.jpg" alt="Female Model">
+                <!-- Proceed Button -->
+                <a id="secondArrowButton" class="absolute bottom-[13px] right-[15px] text-white border-2 rounded-full" href="#">
+                    <svg class="w-[40px] h-auto pl-[3px] max-[2000px]:w-[35px] max-[1600px]:w-[30px]" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9 18 6-6-6-6"></path>
+                  </svg></a>
+                <!-- Model Img Text -->
+                <p class="absolute bottom-[15px] left-[20px] text-white text-xl max-[2000px]:text-lg">
+                    Women</p>
+            </div>
+            <!-- Blobs Container -->
+            <div>
+                 <!-- [1. First Blob] -->
+            <svg class="w-[400px] absolute top-1 left-1  max-[2000px]:w-[300px] max-[1600px]:w-[300px] max-[950px]:hidden" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#D2C35B" d="M30.7,-49.2C41,-41.1,51.3,-34.6,58.6,-24.9C66,-15.2,70.3,-2.2,69.6,10.7C68.9,23.7,63.1,36.7,53.9,45.8C44.6,54.8,31.8,59.8,18.2,65.3C4.6,70.8,-9.8,76.6,-20.2,72C-30.6,67.5,-36.9,52.5,-46.2,40.7C-55.5,28.8,-67.7,20.2,-68.8,10.1C-70,0,-60,-11.4,-53.9,-24.5C-47.7,-37.6,-45.4,-52.3,-37.1,-61.3C-28.7,-70.3,-14.4,-73.5,-2.1,-70.3C10.2,-67.1,20.4,-57.3,30.7,-49.2Z" transform="translate(100 100)" />
+              </svg>
+                 <!-- [2. Second Blob] -->
+              <svg class="w-[400px] absolute top-[150px] right-1 max-[2000px]:w-[300px] max-[1600px]:w-[300px] max-[950px]:hidden" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" >
+                <path fill="#B0BD34" d="M38.5,-57.4C53.1,-50.5,70.3,-45.2,76.1,-34.3C81.8,-23.3,76.1,-6.6,70.7,8C65.2,22.6,60,35,52,46C44,57,33.1,66.5,20.5,70.7C7.8,74.8,-6.8,73.7,-20,69.3C-33.2,64.8,-45.1,57.1,-55.3,47C-65.5,36.9,-74.1,24.4,-74.3,11.7C-74.6,-1,-66.5,-13.8,-58.9,-25.4C-51.3,-37.1,-44.3,-47.4,-34.5,-56.5C-24.8,-65.6,-12.4,-73.4,-0.2,-73.1C12,-72.8,23.9,-64.3,38.5,-57.4Z" transform="translate(100 100)" />
+              </svg>
+            </div>
+        </section>
+        <!-- [2.] Featured Products Section -->
+        <section class="relative flex flex-col items-center gap-[25px] mb-[50px]">
+            <!-- Featured Products Text -->
+            <h2>Featured Products</h2>
+            <!-- All Featured Products -->
+            <div class="relative flex max-[1376px]:flex-col gap-[40px] border-b-2 pb-[50px]">
+                <!-- [1.] Featured Product -->
+                <div>
+                    <div id="flip-card">
+                        <div id="flip-card-inner">
+                            <div id="flip-card-front">
+                                <img src="/images/left.jpg" class="w-[350px] h-auto rounded-[10px]">
+                            </div>
+                            <div id="flip-card-back">
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                    <p class="text-[20px] mb-[3px]">$32.00</p>
+                    <ul class="flex gap-3 mb-[8px]">
+                        <button class="w-[25px] h-[25px] bg-black rounded-full active:border-[2px] active:border-white active:border-opacity-[0.5]"></button>
+                        <button class="w-[25px] h-[25px] bg-cyan-600 rounded-full active:border-[2px] active:border-black active:border-opacity-[0.5]"></button>
+                        <button class="w-[25px] h-[25px] bg-orange-600 rounded-full active:border-[2px] active:border-black active:border-opacity-[0.5]"></button>
+                        <button class="w-[25px] h-[25px] bg-green-500 rounded-full active:border-[2px] active:border-black active:border-opacity-[0.5]"></button>
+                    </ul>
+                    <ul class="flex gap-3">
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">XS</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">S</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">M</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">L</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">XL</button>
+                    </ul>
+                </div>
+                <!-- [2.] Featured Product -->
+                <div>
+                    <div id="flip-card">
+                        <div id="flip-card-inner">
+                            <div id="flip-card-front">
+                                <img src="/images/middle.jpg" class="w-[350px] h-auto rounded-[10px]">
+                            </div>
+                            <div id="flip-card-back">
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Men's Essential Tee <span class="opacity-[0.5]">(Bone)</span></p>
+                    <p class="text-[20px] mb-[3px]">$32.00</p>
+                    <ul class="flex gap-3 mb-[8px]">
+                        <button class="w-[25px] h-[25px] bg-black rounded-full active:border-[2px] active:border-white active:border-opacity-[0.5]"></button>
+                        <button class="w-[25px] h-[25px] bg-cyan-600 rounded-full active:border-[2px] active:border-black active:border-opacity-[0.5]"></button>
+                        <button class="w-[25px] h-[25px] bg-orange-600 rounded-full active:border-[2px] active:border-black active:border-opacity-[0.5]"></button>
+                        <button class="w-[25px] h-[25px] bg-green-500 rounded-full active:border-[2px] active:border-black active:border-opacity-[0.5]"></button>
+                    </ul>
+                    <ul class="flex gap-3">
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">XS</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">S</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">M</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">L</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">XL</button>
+                    </ul>
+                </div>
+                <!-- [3.] Featured Product -->
+                <div>
+                    <div id="flip-card">
+                        <div id="flip-card-inner">
+                            <div id="flip-card-front">
+                                <img src="/images/right.jpg" class="w-[350px] h-auto rounded-[10px]">
+                            </div>
+                            <div id="flip-card-back">
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Men's Essential Tee <span class="opacity-[0.5]">(Heather Gray Triblend)</span></p>
+                    <p class="text-[20px] mb-[3px]">$32.00</p>
+                    <ul class="flex gap-3 mb-[8px]">
+                        <button class="w-[25px] h-[25px] bg-black rounded-full active:border-[2px] active:border-white active:border-opacity-[0.5]"></button>
+                        <button class="w-[25px] h-[25px] bg-cyan-600 rounded-full active:border-[2px] active:border-black active:border-opacity-[0.5]"></button>
+                        <button class="w-[25px] h-[25px] bg-orange-600 rounded-full active:border-[2px] active:border-black active:border-opacity-[0.5]"></button>
+                        <button class="w-[25px] h-[25px] bg-green-500 rounded-full active:border-[2px] active:border-black active:border-opacity-[0.5]"></button>
+                    </ul>
+                    <ul class="flex gap-3">
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">XS</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">S</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">M</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">L</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">XL</button>
+                    </ul>
+                </div>
+            </div>
+            <!-- Blobs Container -->
+            <div>
+                <!-- [1.] Blobs visible > 1376px  -->
+                <div class="max-[1750px]:hidden">
+                    <svg class="w-[400px] absolute top-1 left-1  max-[2000px]:w-[300px] max-[1600px]:w-[300px] max-[950px]:hidden" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#D2C35B" d="M30.7,-49.2C41,-41.1,51.3,-34.6,58.6,-24.9C66,-15.2,70.3,-2.2,69.6,10.7C68.9,23.7,63.1,36.7,53.9,45.8C44.6,54.8,31.8,59.8,18.2,65.3C4.6,70.8,-9.8,76.6,-20.2,72C-30.6,67.5,-36.9,52.5,-46.2,40.7C-55.5,28.8,-67.7,20.2,-68.8,10.1C-70,0,-60,-11.4,-53.9,-24.5C-47.7,-37.6,-45.4,-52.3,-37.1,-61.3C-28.7,-70.3,-14.4,-73.5,-2.1,-70.3C10.2,-67.1,20.4,-57.3,30.7,-49.2Z" transform="translate(100 100)" />
+                      </svg>
+                      <svg class="w-[400px] absolute top-[150px] right-1 max-[2000px]:w-[300px] max-[1600px]:w-[300px] max-[950px]:hidden" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" >
+                        <path fill="#B0BD34" d="M38.5,-57.4C53.1,-50.5,70.3,-45.2,76.1,-34.3C81.8,-23.3,76.1,-6.6,70.7,8C65.2,22.6,60,35,52,46C44,57,33.1,66.5,20.5,70.7C7.8,74.8,-6.8,73.7,-20,69.3C-33.2,64.8,-45.1,57.1,-55.3,47C-65.5,36.9,-74.1,24.4,-74.3,11.7C-74.6,-1,-66.5,-13.8,-58.9,-25.4C-51.3,-37.1,-44.3,-47.4,-34.5,-56.5C-24.8,-65.6,-12.4,-73.4,-0.2,-73.1C12,-72.8,23.9,-64.3,38.5,-57.4Z" transform="translate(100 100)" />
+                      </svg>
+                </div>
+                <!-- [2.] Blobs visible < 1376px -->
+                <div class="min-[1376px]:hidden max-[950px]:hidden">
+                    <svg class="w-[300px] absolute top-1 left-1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#D2C35B" d="M30.7,-49.2C41,-41.1,51.3,-34.6,58.6,-24.9C66,-15.2,70.3,-2.2,69.6,10.7C68.9,23.7,63.1,36.7,53.9,45.8C44.6,54.8,31.8,59.8,18.2,65.3C4.6,70.8,-9.8,76.6,-20.2,72C-30.6,67.5,-36.9,52.5,-46.2,40.7C-55.5,28.8,-67.7,20.2,-68.8,10.1C-70,0,-60,-11.4,-53.9,-24.5C-47.7,-37.6,-45.4,-52.3,-37.1,-61.3C-28.7,-70.3,-14.4,-73.5,-2.1,-70.3C10.2,-67.1,20.4,-57.3,30.7,-49.2Z" transform="translate(100 100)" />
+                      </svg>
+                      <svg class="w-[300px] absolute top-[200px] right-1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" >
+                        <path fill="#B0BD34" d="M38.5,-57.4C53.1,-50.5,70.3,-45.2,76.1,-34.3C81.8,-23.3,76.1,-6.6,70.7,8C65.2,22.6,60,35,52,46C44,57,33.1,66.5,20.5,70.7C7.8,74.8,-6.8,73.7,-20,69.3C-33.2,64.8,-45.1,57.1,-55.3,47C-65.5,36.9,-74.1,24.4,-74.3,11.7C-74.6,-1,-66.5,-13.8,-58.9,-25.4C-51.3,-37.1,-44.3,-47.4,-34.5,-56.5C-24.8,-65.6,-12.4,-73.4,-0.2,-73.1C12,-72.8,23.9,-64.3,38.5,-57.4Z" transform="translate(100 100)" />
+                      </svg>
+                      <svg class="w-[300px] absolute top-[700px] left-1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#D2C35B" d="M30.7,-49.2C41,-41.1,51.3,-34.6,58.6,-24.9C66,-15.2,70.3,-2.2,69.6,10.7C68.9,23.7,63.1,36.7,53.9,45.8C44.6,54.8,31.8,59.8,18.2,65.3C4.6,70.8,-9.8,76.6,-20.2,72C-30.6,67.5,-36.9,52.5,-46.2,40.7C-55.5,28.8,-67.7,20.2,-68.8,10.1C-70,0,-60,-11.4,-53.9,-24.5C-47.7,-37.6,-45.4,-52.3,-37.1,-61.3C-28.7,-70.3,-14.4,-73.5,-2.1,-70.3C10.2,-67.1,20.4,-57.3,30.7,-49.2Z" transform="translate(100 100)" />
+                      </svg>
+                      <svg class="w-[300px] absolute top-[900px] right-1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" >
+                        <path fill="#B0BD34" d="M38.5,-57.4C53.1,-50.5,70.3,-45.2,76.1,-34.3C81.8,-23.3,76.1,-6.6,70.7,8C65.2,22.6,60,35,52,46C44,57,33.1,66.5,20.5,70.7C7.8,74.8,-6.8,73.7,-20,69.3C-33.2,64.8,-45.1,57.1,-55.3,47C-65.5,36.9,-74.1,24.4,-74.3,11.7C-74.6,-1,-66.5,-13.8,-58.9,-25.4C-51.3,-37.1,-44.3,-47.4,-34.5,-56.5C-24.8,-65.6,-12.4,-73.4,-0.2,-73.1C12,-72.8,23.9,-64.3,38.5,-57.4Z" transform="translate(100 100)" />
+                      </svg>
+                      <svg class="w-[300px] absolute top-[1400px] left-1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#D2C35B" d="M30.7,-49.2C41,-41.1,51.3,-34.6,58.6,-24.9C66,-15.2,70.3,-2.2,69.6,10.7C68.9,23.7,63.1,36.7,53.9,45.8C44.6,54.8,31.8,59.8,18.2,65.3C4.6,70.8,-9.8,76.6,-20.2,72C-30.6,67.5,-36.9,52.5,-46.2,40.7C-55.5,28.8,-67.7,20.2,-68.8,10.1C-70,0,-60,-11.4,-53.9,-24.5C-47.7,-37.6,-45.4,-52.3,-37.1,-61.3C-28.7,-70.3,-14.4,-73.5,-2.1,-70.3C10.2,-67.1,20.4,-57.3,30.7,-49.2Z" transform="translate(100 100)" />
+                      </svg>
+                      <svg class="w-[300px] absolute top-[1600px] right-1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" >
+                        <path fill="#B0BD34" d="M38.5,-57.4C53.1,-50.5,70.3,-45.2,76.1,-34.3C81.8,-23.3,76.1,-6.6,70.7,8C65.2,22.6,60,35,52,46C44,57,33.1,66.5,20.5,70.7C7.8,74.8,-6.8,73.7,-20,69.3C-33.2,64.8,-45.1,57.1,-55.3,47C-65.5,36.9,-74.1,24.4,-74.3,11.7C-74.6,-1,-66.5,-13.8,-58.9,-25.4C-51.3,-37.1,-44.3,-47.4,-34.5,-56.5C-24.8,-65.6,-12.4,-73.4,-0.2,-73.1C12,-72.8,23.9,-64.3,38.5,-57.4Z" transform="translate(100 100)" />
+                      </svg>
+                </div>
+            </div>
+        </section>
+        <!-- [3.] Latest Products Section -->
+        <section class="relative flex flex-col items-center gap-[25px] mb-[50px]">
+            <h2>Latest Products</h2>
+            <!-- First Row -->
+            <div class="flex max-[1376px]:flex-col gap-[40px]">
+                <!-- [1.] Latest Product -->
+                <div class="relative">
+                    <img src="/images/tee.jpg" class="w-[250px] h-auto rounded-[10px]">
+                    <p>Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                    <p class="text-[20px] mb-[3px]">$32.00</p>
+                    <ul class="flex gap-3">
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">XS</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">S</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">M</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">L</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">XL</button>
+                    </ul>
+                    <svg id="heart" onclick="click()" class="absolute top-[10px] right-[10px] w-[30px] h-auto text-white hover:text-red-600 transition duration-100 ease-in-out delay-150 bg-black bg-opacity-25 rounded-lg shadow-xl cursor-pointer hover:-translate-y-1 hover:scale-100"
+                    width="40" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" viewBox="-3 0 30 25" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                    </svg>
+                </div>
+                <!-- [2.] Latest Product -->
+                <div class="relative">
+                    <img src="/images/tee.jpg" class="w-[250px] h-auto rounded-[10px]">
+                    <p>Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                    <p class="text-[20px] mb-[3px]">$32.00</p>
+                    <ul class="flex gap-3">
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">XS</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">S</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">M</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">L</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">XL</button>
+                    </ul>
+                    <svg id="heart" class="absolute top-[10px] right-[10px] w-[30px] h-auto text-white hover:text-red-600 transition duration-100 ease-in-out delay-150 bg-black bg-opacity-25 rounded-lg shadow-xl cursor-pointer hover:-translate-y-1 hover:scale-100"
+                    width="40" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" viewBox="-3 0 30 25" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                    </svg>
+                </div>
+                <!-- [3.] Latest Product -->
+                <div class="relative">
+                    <img src="/images/tee.jpg" class="w-[250px] h-auto rounded-[10px]">
+                    <p>Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                    <p class="text-[20px] mb-[3px]">$32.00</p>
+                    <ul class="flex gap-3">
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">XS</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">S</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">M</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">L</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">XL</button>
+                    </ul>
+                    <svg id="heart" class="absolute top-[10px] right-[10px] w-[30px] h-auto text-white hover:text-red-600 transition duration-100 ease-in-out delay-150 bg-black bg-opacity-25 rounded-lg shadow-xl cursor-pointer hover:-translate-y-1 hover:scale-100"
+                    width="40" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" viewBox="-3 0 30 25" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                    </svg>
+                </div>
+                <!-- [4.] Latest Product -->
+                <div class="relative">
+                    <img src="/images/tee.jpg" class="w-[250px] h-auto rounded-[10px]">
+                    <p>Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                    <p class="text-[20px] mb-[3px]">$32.00</p>
+                    <ul class="flex gap-3">
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">XS</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">S</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">M</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">L</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">XL</button>
+                    </ul>
+                    <svg id="heart" class="absolute top-[10px] right-[10px] w-[30px] h-auto text-white hover:text-red-600 transition duration-100 ease-in-out delay-150 bg-black bg-opacity-25 rounded-lg shadow-xl cursor-pointer hover:-translate-y-1 hover:scale-100"
+                    width="40" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" viewBox="-3 0 30 25" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                    </svg>
+                </div>        
+            </div>
+            <!-- Second Row -->
+            <div class="flex max-[1376px]:flex-col gap-[40px] border-b-2 pb-[50px]">
+                <!-- [1.] Latest Product -->
+                <div class="relative">
+                    <img src="/images/tee.jpg" class="w-[250px] h-auto rounded-[10px]">
+                    <p>Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                    <p class="text-[20px] mb-[3px]">$32.00</p>
+                    <ul class="flex gap-3">
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">XS</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">S</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">M</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">L</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">XL</button>
+                    </ul>
+                    <svg id="heart" class="absolute top-[10px] right-[10px] w-[30px] h-auto text-white hover:text-red-600 transition duration-100 ease-in-out delay-150 bg-black bg-opacity-25 rounded-lg shadow-xl cursor-pointer hover:-translate-y-1 hover:scale-100"
+                    width="40" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" viewBox="-3 0 30 25" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                    </svg>
+                </div>
+                <!-- [2.] Latest Product -->
+                <div class="relative">
+                    <img src="/images/tee.jpg" class="w-[250px] h-auto rounded-[10px]">
+                    <p>Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                    <p class="text-[20px] mb-[3px]">$32.00</p>
+                    <ul class="flex gap-3">
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">XS</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">S</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">M</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">L</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">XL</button>
+                    </ul>
+                    <svg id="heart" class="absolute top-[10px] right-[10px] w-[30px] h-auto text-white hover:text-red-600 transition duration-100 ease-in-out delay-150 bg-black bg-opacity-25 rounded-lg shadow-xl cursor-pointer hover:-translate-y-1 hover:scale-100"
+                    width="40" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" viewBox="-3 0 30 25" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                    </svg>
+                </div>
+                <!-- [3.] Latest Product -->
+                <div class="relative">
+                    <img src="/images/tee.jpg" class="w-[250px] h-auto rounded-[10px]">
+                    <p>Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                    <p class="text-[20px] mb-[3px]">$32.00</p>
+                    <ul class="flex gap-3">
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">XS</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">S</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">M</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">L</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">XL</button>
+                    </ul>
+                    <svg id="heart" class="absolute top-[10px] right-[10px] w-[30px] h-auto text-white hover:text-red-600 transition duration-100 ease-in-out delay-150 bg-black bg-opacity-25 rounded-lg shadow-xl cursor-pointer hover:-translate-y-1 hover:scale-100"
+                    width="40" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" viewBox="-3 0 30 25" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                    </svg>
+                </div>
+                <!-- [4.] Latest Product -->
+                <div class="relative">
+                    <img src="/images/tee.jpg" class="w-[250px] h-auto rounded-[10px]">
+                    <p>Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                    <p class="text-[20px] mb-[3px]">$32.00</p>
+                    <ul class="flex gap-3">
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">XS</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">S</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">M</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">L</button>
+                        <button class="w-[25px] h-[25px] text-center bg-[#e9e9e9] border-2 border-black border-opacity-[0.25] leading-[20px] active:bg-gray-400">XL</button>
+                    </ul>
+                    <svg id="heart" class="absolute top-[10px] right-[10px] w-[30px] h-auto text-white hover:text-red-600 transition duration-100 ease-in-out delay-150 bg-black bg-opacity-25 rounded-lg shadow-xl cursor-pointer hover:-translate-y-1 hover:scale-100"
+                    width="40" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" viewBox="-3 0 30 25" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                    </path>
+                    </svg>
+                </div>         
+            </div>
+            <!-- Blobs Container -->
+            <div>
+                <!-- [1.] Blobs visible > 1376px  -->
+                <div class="max-[1750px]:hidden">
+                    <svg class="w-[400px] absolute top-1 left-1  max-[2000px]:w-[300px] max-[1600px]:w-[300px] max-[950px]:hidden" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#D2C35B" d="M30.7,-49.2C41,-41.1,51.3,-34.6,58.6,-24.9C66,-15.2,70.3,-2.2,69.6,10.7C68.9,23.7,63.1,36.7,53.9,45.8C44.6,54.8,31.8,59.8,18.2,65.3C4.6,70.8,-9.8,76.6,-20.2,72C-30.6,67.5,-36.9,52.5,-46.2,40.7C-55.5,28.8,-67.7,20.2,-68.8,10.1C-70,0,-60,-11.4,-53.9,-24.5C-47.7,-37.6,-45.4,-52.3,-37.1,-61.3C-28.7,-70.3,-14.4,-73.5,-2.1,-70.3C10.2,-67.1,20.4,-57.3,30.7,-49.2Z" transform="translate(100 100)" />
+                      </svg>
+                      <svg class="w-[400px] absolute top-[150px] right-1 max-[2000px]:w-[300px] max-[1600px]:w-[300px] max-[950px]:hidden" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" >
+                        <path fill="#B0BD34" d="M38.5,-57.4C53.1,-50.5,70.3,-45.2,76.1,-34.3C81.8,-23.3,76.1,-6.6,70.7,8C65.2,22.6,60,35,52,46C44,57,33.1,66.5,20.5,70.7C7.8,74.8,-6.8,73.7,-20,69.3C-33.2,64.8,-45.1,57.1,-55.3,47C-65.5,36.9,-74.1,24.4,-74.3,11.7C-74.6,-1,-66.5,-13.8,-58.9,-25.4C-51.3,-37.1,-44.3,-47.4,-34.5,-56.5C-24.8,-65.6,-12.4,-73.4,-0.2,-73.1C12,-72.8,23.9,-64.3,38.5,-57.4Z" transform="translate(100 100)" />
+                      </svg>
+                </div>
+                <!-- [2.] Blobs visible < 1376px -->
+                <div class="min-[1376px]:hidden max-[950px]:hidden">
+                    <svg class="w-[300px] absolute top-1 left-1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#D2C35B" d="M30.7,-49.2C41,-41.1,51.3,-34.6,58.6,-24.9C66,-15.2,70.3,-2.2,69.6,10.7C68.9,23.7,63.1,36.7,53.9,45.8C44.6,54.8,31.8,59.8,18.2,65.3C4.6,70.8,-9.8,76.6,-20.2,72C-30.6,67.5,-36.9,52.5,-46.2,40.7C-55.5,28.8,-67.7,20.2,-68.8,10.1C-70,0,-60,-11.4,-53.9,-24.5C-47.7,-37.6,-45.4,-52.3,-37.1,-61.3C-28.7,-70.3,-14.4,-73.5,-2.1,-70.3C10.2,-67.1,20.4,-57.3,30.7,-49.2Z" transform="translate(100 100)" />
+                      </svg>
+                      <svg class="w-[300px] absolute top-[200px] right-1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" >
+                        <path fill="#B0BD34" d="M38.5,-57.4C53.1,-50.5,70.3,-45.2,76.1,-34.3C81.8,-23.3,76.1,-6.6,70.7,8C65.2,22.6,60,35,52,46C44,57,33.1,66.5,20.5,70.7C7.8,74.8,-6.8,73.7,-20,69.3C-33.2,64.8,-45.1,57.1,-55.3,47C-65.5,36.9,-74.1,24.4,-74.3,11.7C-74.6,-1,-66.5,-13.8,-58.9,-25.4C-51.3,-37.1,-44.3,-47.4,-34.5,-56.5C-24.8,-65.6,-12.4,-73.4,-0.2,-73.1C12,-72.8,23.9,-64.3,38.5,-57.4Z" transform="translate(100 100)" />
+                      </svg>
+                      <svg class="w-[300px] absolute top-[700px] left-1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#D2C35B" d="M30.7,-49.2C41,-41.1,51.3,-34.6,58.6,-24.9C66,-15.2,70.3,-2.2,69.6,10.7C68.9,23.7,63.1,36.7,53.9,45.8C44.6,54.8,31.8,59.8,18.2,65.3C4.6,70.8,-9.8,76.6,-20.2,72C-30.6,67.5,-36.9,52.5,-46.2,40.7C-55.5,28.8,-67.7,20.2,-68.8,10.1C-70,0,-60,-11.4,-53.9,-24.5C-47.7,-37.6,-45.4,-52.3,-37.1,-61.3C-28.7,-70.3,-14.4,-73.5,-2.1,-70.3C10.2,-67.1,20.4,-57.3,30.7,-49.2Z" transform="translate(100 100)" />
+                      </svg>
+                      <svg class="w-[300px] absolute top-[900px] right-1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" >
+                        <path fill="#B0BD34" d="M38.5,-57.4C53.1,-50.5,70.3,-45.2,76.1,-34.3C81.8,-23.3,76.1,-6.6,70.7,8C65.2,22.6,60,35,52,46C44,57,33.1,66.5,20.5,70.7C7.8,74.8,-6.8,73.7,-20,69.3C-33.2,64.8,-45.1,57.1,-55.3,47C-65.5,36.9,-74.1,24.4,-74.3,11.7C-74.6,-1,-66.5,-13.8,-58.9,-25.4C-51.3,-37.1,-44.3,-47.4,-34.5,-56.5C-24.8,-65.6,-12.4,-73.4,-0.2,-73.1C12,-72.8,23.9,-64.3,38.5,-57.4Z" transform="translate(100 100)" />
+                      </svg>
+                      <svg class="w-[300px] absolute top-[1400px] left-1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#D2C35B" d="M30.7,-49.2C41,-41.1,51.3,-34.6,58.6,-24.9C66,-15.2,70.3,-2.2,69.6,10.7C68.9,23.7,63.1,36.7,53.9,45.8C44.6,54.8,31.8,59.8,18.2,65.3C4.6,70.8,-9.8,76.6,-20.2,72C-30.6,67.5,-36.9,52.5,-46.2,40.7C-55.5,28.8,-67.7,20.2,-68.8,10.1C-70,0,-60,-11.4,-53.9,-24.5C-47.7,-37.6,-45.4,-52.3,-37.1,-61.3C-28.7,-70.3,-14.4,-73.5,-2.1,-70.3C10.2,-67.1,20.4,-57.3,30.7,-49.2Z" transform="translate(100 100)" />
+                      </svg>
+                      <svg class="w-[300px] absolute top-[1600px] right-1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" >
+                        <path fill="#B0BD34" d="M38.5,-57.4C53.1,-50.5,70.3,-45.2,76.1,-34.3C81.8,-23.3,76.1,-6.6,70.7,8C65.2,22.6,60,35,52,46C44,57,33.1,66.5,20.5,70.7C7.8,74.8,-6.8,73.7,-20,69.3C-33.2,64.8,-45.1,57.1,-55.3,47C-65.5,36.9,-74.1,24.4,-74.3,11.7C-74.6,-1,-66.5,-13.8,-58.9,-25.4C-51.3,-37.1,-44.3,-47.4,-34.5,-56.5C-24.8,-65.6,-12.4,-73.4,-0.2,-73.1C12,-72.8,23.9,-64.3,38.5,-57.4Z" transform="translate(100 100)" />
+                      </svg>
+                </div>
+            </div>
+        </section>
+        <!-- [4.] Footer -->
+        <section class="relative flex items-center justify-center w-full h-[125px] bg-gradient-to-tr from-[#D6D58E] via-[#DFCA55] to-[#9FC131]  ">
+            <h1 id="topBar__logo" class="p-1 mr-10 font-mono text-3xl font-bold text-black border-2 border-black">Blajev Style</h1>
+            <ul class="flex justify-center gap-[25px] text-lg font-medium">
+                <a href="#">
+                    <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Home</li>
+                </a>
+                <li>|</li>
+                <a href="#">
+                    <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Shop</li>
+                </a>
+                <li>|</li>
+                <a href="#">
+                    <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">About</li>
+                </a>
+                <li>|</li>
+                <a href="#">
+                    <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Contact</li>
+                </a>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
+
+<!-- TO-DO -->
+<!-- Featured Products Section - Style <h2> -->

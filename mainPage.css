@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 
 /* [1]. Typewriter Effect */
 
@@ -39,17 +44,17 @@
 
 @keyframes seasonTyping {
   from { width: 0 }
-  to { width: 287.7px } 
+  to { width: 299.23px } 
 }
 
 @keyframes newCollection {
   from { width: 0}
-  to { width: 529.63px } 
+  to { width: 550.23px } 
 }
 
 @keyframes collectionTyping {
   from { width: 0 }
-  to { width: 440.91px }
+  to { width: 465.08px }
 }
 
 @keyframes blink-caret {

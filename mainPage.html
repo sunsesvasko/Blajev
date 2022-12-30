@@ -14,76 +14,16 @@
     <!--=============/ 
      [1.] Landing Page
     /==============-->
-    <header id="header" class="relative h-[800px] w-full bg-gradient-to-tr from-[#D6D58E] via-[#DFCA55] to-[#9FC131]">
+    <header id="header" class="relative h-[800px] w-full bg-[url('/images/homeModel.jpg')] bg-cover bg-[center_top_0rem] bg-no-repeat">
+        <div class="bg-white border-b-[1px] border-gray-500">
         <!-- TopBar Container -->
-        <div id="topBar" class="flex items-center justify-between p-6">
+        <div id="topBar" class="relative flex items-center justify-start gap-10 p-6">
             <!-- [1] Logo -->
             <h1 id="topBar__logo" class="p-1 font-mono text-3xl font-bold text-black border-2 border-black">Blajev Style</h1>
-            <!-- [2] Search Form - [START] -->
-            <form id="topBar__search--form" class="items-center hidden md:flex">
-                <!-- Search Icon with Input Field -->
-                <div class="relative w-full">
-                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                    </div>
-                    <input type="text" id="search" class="w-96 pl-10 p-2.5" placeholder="| Search for a product" required>
-                </div>
-                <!-- Search Button -->
-                <button type="submit" class="p-3 text-sm font-medium text-white bg-black bg-opacity-40 hover:bg-opacity-60 focus:ring-4 focus:outline-none">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                </svg>
-                </button>
-            </form>
-            <!-- [2] Search Form - [END] -->
 
-            <!-- [3] Shopping Cart & Favorites Buttons - [START] -->
-            <div class="flex gap-4">
-                <a id="shopping__cart" href="">
-                    <svg class="text-white transition duration-100 ease-in-out delay-150 bg-black bg-opacity-25 rounded-lg shadow-xl cursor-pointer hover:-translate-y-1 hover:scale-100"
-                    width="40" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 26 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M7.75 7.75h11.5l-1.637 6.958a2 2 0 0 1-1.947 1.542h-4.127a2 2 0 0 1-1.933-1.488L7.75 7.75Zm0 0-.75-3H4.75">
-                    </path>
-                    <path fill="currentColor" stroke="none" d="M10 18a1 1 0 1 0 0 2 1 1 0 1 0 0-2z"></path>
-                    <path fill="currentColor" stroke="none" d="M17 18a1 1 0 1 0 0 2 1 1 0 1 0 0-2z"></path>
-                </svg>  
-                </a>
-                <svg class="text-white transition duration-100 ease-in-out delay-150 bg-black bg-opacity-25 rounded-lg shadow-xl cursor-pointer hover:-translate-y-1 hover:scale-100"
-                width="40" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
-                stroke-linejoin="round" stroke-width="2" viewBox="-3 0 30 25" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                </path>
-            </svg>
-            </div>
-            <!-- [3] Shopping Cart & Favorites Buttons - [END] -->
-
-            <!-- [4] Hamburger Icon - [START] -->
-            <div class="flex items-center md:hidden">
-                <div class="space-y-2">
-                    <span class="block w-8 h-0.5 bg-black animate-pulse"></span>
-                    <span class="block w-8 h-0.5 bg-black animate-pulse"></span>
-                    <span class="block w-8 h-0.5 bg-black animate-pulse"></span>
-                </div>
-            </div>
-        </div>
-            <!-- [4] Hamburger Icon - [END] -->
-
-        <!-- Navigation -->
-        <nav id="navigation" class="justify-center hidden md:flex">
-            <ul class="flex justify-around gap-6 text-black font-semibold pl-[104px]">
+            <ul class="flex justify-around gap-6 font-semibold text-black pl-[50px] max-[1400px]:pl-[0px] max-[825px]:hidden">
                 <a href="mainPage.html">
-                    <li class="pb-[1px] transition ease-in-out border-b-2 delay-50 hover:-translate-y-1 hover:scale-110 duration300">Home</li>
+                    <li class="pb-[1px] transition ease-in-out border-b-2 border-black delay-50 hover:-translate-y-1 hover:scale-110 duration300">Home</li>
                 </a>
                 <li>|</li>
                 <a href="shop.html  ">
@@ -98,23 +38,82 @@
                     <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Contact</li>
                 </a>
             </ul>
-        </nav>
+            
+            <!-- [2] Search Form - [START] -->
+            <form id="topBar__search--form" class="items-center hidden border-b-[1px] border-black md:flex ml-[60px] max-[1400px]:ml-[0px]">
+                <!-- Search Icon with Input Field -->
+                <div class="relative w-full">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    </div>
+                    <input type="text" id="search" class="w-96 pl-10 p-2.5" placeholder="| Search for a product" required>
+                </div>
+            </form>
+            <!-- [2] Search Form - [END] -->
+
+            <!-- [3] Shopping Cart & Favorites Buttons - [START] -->
+            <div class="absolute flex right-[30px] max-[1200px]:right-[80px]">
+                <a id="shopping__cart" href="">
+                    <svg class="text-black transition duration-100 ease-in-out cursor-pointer delay-150rounded-lg hover:-translate-y-1 hover:scale-100"
+                    width="40" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 26 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.75 7.75h11.5l-1.637 6.958a2 2 0 0 1-1.947 1.542h-4.127a2 2 0 0 1-1.933-1.488L7.75 7.75Zm0 0-.75-3H4.75">
+                    </path>
+                    <path fill="currentColor" stroke="none" d="M10 18a1 1 0 1 0 0 2 1 1 0 1 0 0-2z"></path>
+                    <path fill="currentColor" stroke="none" d="M17 18a1 1 0 1 0 0 2 1 1 0 1 0 0-2z"></path>
+                </svg>  
+                </a>
+                <svg class="text-black transition duration-100 ease-in-out delay-150 rounded-lg cursor-pointer hover:-translate-y-1 hover:scale-100"
+                width="40" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" viewBox="-3 0 30 25" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                </path>
+            </svg>
+            </div>
+            <!-- [3] Shopping Cart & Favorites Buttons - [END] -->
+
+            <!-- [4] Hamburger Icon - [START] -->
+            <label class="md:hidden">
+                <input type="checkbox">
+                <span class="menu"> <span class="hamburger"></span></span>
+                <ul class="flex gap-6 font-semibold">
+                    <a href="mainPage.html">
+                        <li class="pb-[1px] transition ease-in-out border-b-2 border-black delay-50 hover:-translate-y-1 hover:scale-110 duration300">Home</li>
+                    </a>
+                    <li>|</li>
+                    <a href="shop.html  ">
+                        <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Shop</li>
+                    </a>
+                    <li>|</li>
+                    <a href="#">
+                        <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">About</li>
+                    </a>
+                    <li>|</li>
+                    <a href="#">
+                        <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Contact</li>
+                    </a>
+                </ul>
+            </label>
+            <!-- [4] Hamburger Icon - [END] -->
+        </div>
+        </div>
 
         <!-- Header Text - Season, New Collection, Perfect Style & Button -->
-        <div class="flex flex-col items-center ml-[100px] mt-[100px] leading-[70px] max-[800px]:ml-[0px]">
+        <div class="flex flex-col items-center mt-[190px] leading-[70px] max-[800px]:ml-[0px] text-white">
             <h2 id="season" class="text-[50px]">Spring 2023</h2>
             <h1 id="new__collection" class="text-[75px]">New Collection</h1>
             <p id="collection__text" class="text-[30px]">Find the Perfect Style for You</p>
-            <a href="#"><button  id="shopButton" class="w-[150px] h-auto text-[18px] bg-white rounded-full leading-[50px]">Shop Now</button></a>
+            <a href="shop.html"><button  id="shopButton" class="w-[150px] h-auto text-[18px] bg-white rounded-full leading-[50px] text-black">Shop Now</button></a>
         </div>
 
-        <!-- Wave SVG -->
-        <div id="wave__svg" class="absolute bottom-0 left-0 right-0">
-            <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#f3f4f5" fill-opacity="1" d="M0,128L48,138.7C96,149,192,171,288,197.3C384,224,480,256,576,261.3C672,267,768,245,864,224C960,203,1056,181,1152,154.7C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                </path>
-            </svg>
-        </div>
     </header>
 
     <!--=============/ 

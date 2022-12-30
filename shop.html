@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/dist/output.css">
 </head>
 <body>
-    <header id="header" class="relative h-[800px] w-full bg-[url('/images/shopModel.jpg')] bg-cover bg-center">
+    <header id="header" class="relative h-[600px] w-full bg-[url('/images/shopModel.jpg')] bg-cover bg-center">
         <!-- navBar Container -->
         <div class="flex items-center justify-start p-6 bg-white border-b-[1px] border-gray-500 gap-10 relative">
             <!-- [1] Logo - [START] -->
@@ -16,7 +16,7 @@
             <!-- [1] lOGO - [END] -->
             
             <!-- [2] Navigation - [START] -->
-            <ul class="flex justify-around gap-6 font-semibold text-black max-[800px]:hidden">
+            <ul class="flex justify-around gap-6 font-semibold text-black max-[825px]:hidden">
                 <a href="mainPage.html">
                     <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Home</li>
                 </a>
@@ -36,7 +36,7 @@
             <!-- [2] Navigation - [END] -->
            
             <!-- [3] Shopping Cart & Favorites Buttons - [START] -->
-            <div class="absolute right-[30px] flex gap-4">
+            <div class="absolute right-[30px] flex max-[1200px]:right-[80px]">
                 <a id="shopping__cart" href="">
                     <svg class="text-black transition duration-100 ease-in-out delay-150 cursor-pointer hover:-translate-y-1 hover:scale-100"
                     width="40" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
@@ -60,22 +60,35 @@
             <!-- [3] Shopping Cart & Favorites Buttons - [END] -->
 
             <!-- [4] Hamburger Icon - [START] -->
-            <div class="flex items-center md:hidden">
-                <div class="space-y-2">
-                    <span class="block w-8 h-0.5 bg-black animate-pulse"></span>
-                    <span class="block w-8 h-0.5 bg-black animate-pulse"></span>
-                    <span class="block w-8 h-0.5 bg-black animate-pulse"></span>
-                </div>
-            </div>
+            <label class="md:hidden">
+                <input type="checkbox">
+                <span class="menu"> <span class="hamburger"></span></span>
+                <ul class="flex gap-6 font-semibold">
+                    <a href="mainPage.html">
+                        <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Home</li>
+                    </a>
+                    <li>|</li>
+                    <a href="shop.html  ">
+                        <li class="pb-[1px] border-b-2 border-black transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Shop</li>
+                    </a>
+                    <li>|</li>
+                    <a href="#">
+                        <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">About</li>
+                    </a>
+                    <li>|</li>
+                    <a href="#">
+                        <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Contact</li>
+                    </a>
+                </ul>
+            </label>
             <!-- [4] Hamburger Icon - [END] -->
         </div>
 
         <!-- Header Text - Season, New Collection, Perfect Style & Button -->
-        <div class="flex flex-col items-center mt-[190px] leading-[70px] max-[800px]:ml-[0px] text-white">
+        <div class="flex flex-col items-center mt-[135px] leading-[70px] max-[800px]:ml-[0px] text-white">
             <h2 id="season" class="text-[50px]">Spring 2023</h2>
-            <h1 id="new__collection" class="text-[75px]">New Collection</h1>
+            <h1 id="fashion" class="text-[75px]">Fashion</h1>
             <p id="collection__text" class="text-[30px]">Find the Perfect Style for You</p>
-            <a href="#"><button  id="shopButton" class="w-[150px] h-auto text-[18px] bg-white rounded-full leading-[50px] text-black">Shop Now</button></a>
         </div>
     </header>
     <main class="w-full h-[800px] bg-[#f3f4f5] p-5">

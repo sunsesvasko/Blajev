@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="/dist/output.css">
 </head>
 <body>
+    <!--=============/ 
+     [1.] Header
+    /==============-->
     <header id="header" class="relative h-[600px] w-full bg-[url('/images/shopModel.jpg')] bg-cover bg-center">
         <!-- navBar Container -->
         <div class="flex items-center justify-start p-6 bg-white border-b-[1px] border-gray-500 gap-10 relative">
@@ -91,22 +94,212 @@
             <p id="collection__text" class="text-[30px]">Find the Perfect Style for You</p>
         </div>
     </header>
-    <main class="w-full h-[800px] bg-[#f3f4f5] p-5">
-        <!-- [1] Left Filter Section - [START] -->
-        <section class="w-[200px] h-[700px] bg-white">
-        </section>
-        <!-- [1] Left Filter Section - [END] -->
 
-        <!-- [2] Products Section - [START] -->
-        <section></section>
-        <!-- [2] Products Section - [END] -->
+    <!--=============/ 
+     [1.] Main Content
+    /==============-->
+    <main class="flex gap-14 w-full h-[1500px] bg-[#f3f4f5] p-8">
+        <!-- Main Section - [START] -->
+        <section class="flex w-full h-auto gap-10">
+            <!-- [1] Left Filter Section - [START] -->
+            <section class="flex flex-col w-[300px] h-[810px] bg-white p-2 gap-3">
+                <!-- Search Form - [START] -->
+                <form id="topBar__search--form" class="items-center border-[1px] border-gray-300 rounded-[4px]">
+                    <!-- Search Icon with Input Field -->
+                    <div class="relative w-full">
+                        <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <input type="text" id="search" class="w-full text-xs p-2.5" placeholder="Search for a product" required>
+                    </div>
+                </form>
+                <!-- Search Form - [END] -->
+
+                <!-- Collapsibles - [START]-->
+                <div class="flex flex-col border-[1px] border-gray-300 gap-2 p-3 rounded-[4px]">
+                    <!-- Collapsible #1 - [START] -->
+                    <div class="relative">
+                        <p class="font-semibold text-[15px]">Accessories</p>
+                        <button type="button" class="collapsible absolute top-[0px] right-[0px] bg-gray-300 w-[15px] h-[15px] text-xs rounded-xl text-gray-500 active:bg-blue-500 active:text-white hover:bg-blue-500 hover:text-white mt-[4px]">+</button>
+                        <ul id="accessories" class="flex flex-col gap-[1px] pl-1">
+                            <li class="text-[14px] text-gray-400">Belts</li>
+                            <li class="text-[14px] text-gray-400">Bags</li>
+                            <li class="text-[14px] text-gray-400">Wallets</li>
+                            <li class="text-[14px] text-gray-400">Scarves</li>
+                            <li class="text-[14px] text-gray-400">Hats & Caps</li>
+                            <li class="text-[14px] text-gray-400">Gloves</li>
+                        </ul>
+                    </div>
+                    <!-- Collapsible #1 - [END] -->
+
+                    <!-- Collapsible #2 - [START] -->
+                    <div class="relative">
+                        <p class="font-semibold text-[15px]">Clothing</p>
+                        <button type="button" class="collapsible absolute top-[0px] right-[0px] bg-gray-300 w-[15px] h-[15px] text-xs rounded-xl text-gray-500 active:bg-blue-500 active:text-white hover:bg-blue-500 hover:text-white mt-[4px]">+</button>
+                        <ul id="clothing" class="flex flex-col gap-[1px] pl-1">
+                            <li class="text-[14px] text-gray-400">Jackets</li>
+                            <li class="text-[14px] text-gray-400">Coats</li>
+                            <li class="text-[14px] text-gray-400">Sweaters & Cardigans</li>
+                            <li class="text-[14px] text-gray-400">Jeans</li>
+                            <li class="text-[14px] text-gray-400">Trousers</li>
+                            <li class="text-[14px] text-gray-400">Sweats</li>
+                            <li class="text-[14px] text-gray-400">Tracksuits</li>
+                            <li class="text-[14px] text-gray-400">Suits</li>
+                            <li class="text-[14px] text-gray-400">Blazers</li>
+                            <li class="text-[14px] text-gray-400">Shirts</li>
+                            <li class="text-[14px] text-gray-400">Polo Shirts</li>
+                            <li class="text-[14px] text-gray-400">T-Shirts</li>
+                            <li class="text-[14px] text-gray-400">Nightwear & Loungewear</li>
+                            <li class="text-[14px] text-gray-400">Underwear</li>
+                            <li class="text-[14px] text-gray-400">Socks</li>
+                            <li class="text-[14px] text-gray-400">Beachwear</li>
+                        </ul>
+                    </div>
+                    <!-- Collapsible #2 - [END] -->
+
+                    <!-- Collapsible #3 - [START] -->
+                    <div class="relative">
+                        <p class="font-semibold text-[15px]">Shoes</p>
+                        <button type="button" class="collapsible absolute top-[0px] right-[0px] bg-gray-300 w-[15px] h-[15px] text-xs rounded-xl text-gray-500 active:bg-blue-500 active:text-white hover:bg-blue-500 hover:text-white mt-[4px]">+</button>
+                        <ul id="shoes" class="flex flex-col gap-[1px] pl-1">
+                            <li class="text-[14px] text-gray-400">Trainers</li>
+                            <li class="text-[14px] text-gray-400">Boots</li>
+                            <li class="text-[14px] text-gray-400">Business Shoes</li>
+                            <li class="text-[14px] text-gray-400">Evening Shoes</li>
+                            <li class="text-[14px] text-gray-400">Casual Shoes</li>
+                            <li class="text-[14px] text-gray-400">Slides & Flip Flops</li>
+                            <li class="text-[14px] text-gray-400">Slippers</li>
+                        </ul>
+                    </div>
+                    <!-- Collapsible #3 - [END] -->
+                </div>
+                <!-- Collapsibles - [END] -->
+
+                <!-- Colors - [START] -->
+                <div class="flex flex-col border-[1px] border-gray-300 gap-2 p-3 rounded-[4px]">
+                    <p class="font-semibold text-[15px]">Color</p>
+                    <div class="flex gap-2">
+                        <button type="radio" class="w-[20px] h-[20px] bg-white border-[1px] border-gray-300 rounded-xl active:border-[4px] active:border-blue-500"></button>
+                        <p class="text-gray-500 text-[14px]">Red</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button type="radio" class="w-[20px] h-[20px] bg-white border-[1px] border-gray-300 rounded-xl active:border-[4px] active:border-blue-500"></button>
+                        <p class="text-gray-500 text-[14px]">Black</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button type="radio" class="w-[20px] h-[20px] bg-white border-[1px] border-gray-300 rounded-xl active:border-[4px] active:border-blue-500"></button>
+                        <p class="text-gray-500 text-[14px]">White</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button type="radio" class="w-[20px] h-[20px] bg-white border-[1px] border-gray-300 rounded-xl active:border-[4px] active:border-blue-500"></button>
+                        <p class="text-gray-500 text-[14px]">Blue</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button type="radio" class="w-[20px] h-[20px] bg-white border-[1px] border-gray-300 rounded-xl active:border-[4px] active:border-blue-500"></button>
+                        <p class="text-gray-500 text-[14px]">Brown</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button type="radio" class="w-[20px] h-[20px] bg-white border-[1px] border-gray-300 rounded-xl active:border-[4px] active:border-blue-500"></button>
+                        <p class="text-gray-500 text-[14px]">Green</p>
+                    </div>
+                </div>
+                <!-- Colors - [END] -->
+
+                
+                <!-- Sizes - [START] -->
+                <div class="flex flex-col border-[1px] border-gray-300 gap-2 p-3 rounded-[4px]">
+                    <p class="font-semibold text-[15px]">Sizes</p>
+                    <div class="flex gap-2">
+                        <button type="radio" class="w-[20px] h-[20px] bg-white border-[1px] border-gray-300 rounded-xl active:border-[4px] active:border-blue-500"></button>
+                        <p class="text-gray-500 text-[14px]">Extra Small | XS</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button type="radio" class="w-[20px] h-[20px] bg-white border-[1px] border-gray-300 rounded-xl active:border-[4px] active:border-blue-500"></button>
+                        <p class="text-gray-500 text-[14px]">Small | S</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button type="radio" class="w-[20px] h-[20px] bg-white border-[1px] border-gray-300 rounded-xl active:border-[4px] active:border-blue-500"></button>
+                        <p class="text-gray-500 text-[14px]">Medium | M</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button type="radio" class="w-[20px] h-[20px] bg-white border-[1px] border-gray-300 rounded-xl active:border-[4px] active:border-blue-500"></button>
+                        <p class="text-gray-500 text-[14px]">Extra Large | XL</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button type="radio" class="w-[20px] h-[20px] bg-white border-[1px] border-gray-300 rounded-xl active:border-[4px] active:border-blue-500"></button>
+                        <p class="text-gray-500 text-[14px]">Go Gym | XXL</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button type="radio" class="w-[20px] h-[20px] bg-white border-[1px] border-gray-300 rounded-xl active:border-[4px] active:border-blue-500"></button>
+                        <p class="text-gray-500 text-[14px]">Definitely Go Gym | XXXL</p>
+                    </div>
+                </div>
+                <!-- Sizes - [END] -->
+
+                <!-- Price Range Slider - [START] -->
+                <div class="flex flex-col border-[1px] border-gray-300 gap-2 p-3 rounded-[4px]">
+                </div>
+
+                <!-- Price Range Slider - [END] -->
+            </section>
+            <!-- [1] Left Filter Section - [END] -->
+
+            <!-- [2] Products Section - [START] -->
+            <section class="flex gap-3 w-full h-[900px]">
+                <!-- Left Column -->
+                <div class="flex flex-col w-full h-auto gap-1">
+                    <!-- Product # -->
+                    <div class="w-full h-[200px] bg-white border-[1px] border-gray-300">
+                    </div>
+                    <!-- Product # -->
+                    <div class="w-full h-[200px] bg-white border-[1px] border-gray-300">
+                    </div>
+                    <!-- Product # -->
+                    <div class="w-full h-[200px] bg-white border-[1px] border-gray-300">
+                    </div>              
+                    <!-- Product # -->
+                    <div class="w-full h-[200px] bg-white border-[1px] border-gray-300">
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="flex flex-col w-full h-auto gap-1">
+                    <!-- Product # -->
+                    <div class="w-full h-[200px] bg-white border-[1px] border-gray-300">
+                    </div>
+                    <!-- Product # -->
+                    <div class="w-full h-[200px] bg-white border-[1px] border-gray-300">
+                    </div>
+                    <!-- Product # -->
+                    <div class="w-full h-[200px] bg-white border-[1px] border-gray-300">
+                    </div>           
+                    <!-- Product # -->
+                    <div class="w-full h-[200px] bg-white border-[1px] border-gray-300">
+                    </div>
+                </div>
+            </section>
+            <!-- [2] Products Section - [END] -->
+
+
+        </section>
+        <!-- Main Section - [END] -->
     </main>
+
+    <!--=============/ 
+     [1.] Footer
+    /==============-->
     <footer>
 
     </footer>
+    <script src="javascript.js"></script>
 </body>
 </html>
 
 <!-- TO-DO -->
-<!-- 1. Change Type-Writer Typing Lines Color -->
-<!-- 2. Fix Comments -->
+<!-- 1. Make Color Buttons Work -->
+<!-- 2. Make Drop-Down List Items Lead to Somewhere -->

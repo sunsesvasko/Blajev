@@ -98,11 +98,11 @@
     <!--=============/ 
      [1.] Main Content
     /==============-->
-    <main class="flex gap-14 w-full h-[1500px] bg-[#f3f4f5] p-8">
+    <main class="flex gap-14 w-full h-[1200px] bg-[#f3f4f5] p-8">
         <!-- Main Section - [START] -->
         <section class="flex w-full h-auto gap-10">
             <!-- [1] Left Filter Section - [START] -->
-            <section class="flex flex-col w-[300px] h-[810px] bg-white p-2 gap-3">
+            <section class="flex flex-col w-[300px] h-[940px] bg-white p-2 gap-3">
                 <!-- Search Form - [START] -->
                 <form id="topBar__search--form" class="items-center border-[1px] border-gray-300 rounded-[4px]">
                     <!-- Search Icon with Input Field -->
@@ -243,44 +243,277 @@
 
                 <!-- Price Range Slider - [START] -->
                 <div class="flex flex-col border-[1px] border-gray-300 gap-2 p-3 rounded-[4px]">
+                    <p class="font-semibold text-[15px]">Filter by Price</p>
                 </div>
-
                 <!-- Price Range Slider - [END] -->
+
+                <!-- Brand Filter - [START] -->
+                <div class="flex flex-col border-[1px] border-gray-300 gap-2 p-3 rounded-[4px]">
+                    <p class="font-semibold text-[15px]">Brand</p>
+                    <div class="flex gap-2">
+                        <button type="radio" class="w-[20px] h-[20px] bg-white border-[1px] border-gray-300 rounded-md active:border-[2px] active:border-blue-500"></button>
+                        <p class="text-gray-500 text-[14px]">Adidas</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button type="radio" class="w-[20px] h-[20px] bg-white border-[1px] border-gray-300 rounded-md active:border-[2px] active:border-blue-500"></button>
+                        <p class="text-gray-500 text-[14px]">Armani</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button type="radio" class="w-[20px] h-[20px] bg-white border-[1px] border-gray-300 rounded-md active:border-[2px] active:border-blue-500"></button>
+                        <p class="text-gray-500 text-[14px]">Dior</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button type="radio" class="w-[20px] h-[20px] bg-white border-[1px] border-gray-300 rounded-md active:border-[2px] active:border-blue-500"></button>
+                        <p class="text-gray-500 text-[14px]">Columbia</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button type="radio" class="w-[20px] h-[20px] bg-white border-[1px] border-gray-300 rounded-md active:border-[2px] active:border-blue-500"></button>
+                        <p class="text-gray-500 text-[14px]">Hugo Boss</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button type="radio" class="w-[20px] h-[20px] bg-white border-[1px] border-gray-300 rounded-md active:border-[2px] active:border-blue-500"></button>
+                        <p class="text-gray-500 text-[14px]">Givenchy</p>
+                    </div>
+                </div>
+                <!-- Brand Filter - [END] -->
             </section>
             <!-- [1] Left Filter Section - [END] -->
 
             <!-- [2] Products Section - [START] -->
-            <section class="flex gap-3 w-full h-[900px]">
-                <!-- Left Column -->
-                <div class="flex flex-col w-full h-auto gap-1">
-                    <!-- Product # -->
-                    <div class="w-full h-[200px] bg-white border-[1px] border-gray-300">
+            <section class="flex flex-col gap-3 w-full h-[1100px] relative">
+
+                <!-- Both Columns Container -->
+                <div class="flex">
+                    <!-- Left Column -->
+                    <div class="flex flex-col w-full h-auto gap-1">
+                        <!-- Product #1 -->
+                        <div class="flex gap-5 w-full h-[200px] bg-white border-[1px] border-gray-300 p-3">
+                            <img src="/images/whiteTee.jpg" class="w-[260px] h-auto inline-block">
+                            <div class="flex flex-col gap-3 pt-2">
+                                <p class="font-semibold text-center text-[15px] mb-[-10px]">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                                <p class="font-semibold text-[15px] mb-10">$32.00</p>
+                                <ul class="flex gap-2">
+                                    <li class="w-[20px] h-[20px] rounded-full bg-black hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-red-700 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-purple-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-green-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                </ul>
+                                <ul class="flex gap-2">
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">XS</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">S</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">M</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">L</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">XL</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Product #2 -->
+                        <div class="flex gap-5 w-full h-[200px] bg-white border-[1px] border-gray-300 p-3">
+                            <img src="/images/whiteTee.jpg" class="w-[260px] h-auto inline-block">
+                            <div class="flex flex-col gap-3 pt-2">
+                                <p class="font-semibold text-center text-[15px] mb-[-10px]">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                                <p class="font-semibold text-[15px] mb-10">$32.00</p>
+                                <ul class="flex gap-2">
+                                    <li class="w-[20px] h-[20px] rounded-full bg-black hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-red-700 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-purple-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-green-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                </ul>
+                                <ul class="flex gap-2">
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">XS</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">S</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">M</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">L</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">XL</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Product #3 -->
+                        <div class="flex gap-5 w-full h-[200px] bg-white border-[1px] border-gray-300 p-3">
+                            <img src="/images/whiteTee.jpg" class="w-[260px] h-auto inline-block">
+                            <div class="flex flex-col gap-3 pt-2">
+                                <p class="font-semibold text-center text-[15px] mb-[-10px]">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                                <p class="font-semibold text-[15px] mb-10">$32.00</p>
+                                <ul class="flex gap-2">
+                                    <li class="w-[20px] h-[20px] rounded-full bg-black hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-red-700 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-purple-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-green-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                </ul>
+                                <ul class="flex gap-2">
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">XS</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">S</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">M</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">L</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">XL</li>
+                                </ul>
+                            </div>
+                        </div>            
+                        <!-- Product #4 -->
+                        <div class="flex gap-5 w-full h-[200px] bg-white border-[1px] border-gray-300 p-3">
+                            <img src="/images/whiteTee.jpg" class="w-[260px] h-auto inline-block">
+                            <div class="flex flex-col gap-3 pt-2">
+                                <p class="font-semibold text-center text-[15px] mb-[-10px]">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                                <p class="font-semibold text-[15px] mb-10">$32.00</p>
+                                <ul class="flex gap-2">
+                                    <li class="w-[20px] h-[20px] rounded-full bg-black hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-red-700 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-purple-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-green-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                </ul>
+                                <ul class="flex gap-2">
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">XS</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">S</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">M</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">L</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">XL</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Product #5 -->
+                        <div class="flex gap-5 w-full h-[200px] bg-white border-[1px] border-gray-300 p-3">
+                            <img src="/images/whiteTee.jpg" class="w-[260px] h-auto inline-block">
+                            <div class="flex flex-col gap-3 pt-2">
+                                <p class="font-semibold text-center text-[15px] mb-[-10px]">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                                <p class="font-semibold text-[15px] mb-10">$32.00</p>
+                                <ul class="flex gap-2">
+                                    <li class="w-[20px] h-[20px] rounded-full bg-black hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-red-700 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-purple-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-green-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                </ul>
+                                <ul class="flex gap-2">
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">XS</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">S</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">M</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">L</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">XL</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Product # -->
-                    <div class="w-full h-[200px] bg-white border-[1px] border-gray-300">
-                    </div>
-                    <!-- Product # -->
-                    <div class="w-full h-[200px] bg-white border-[1px] border-gray-300">
-                    </div>              
-                    <!-- Product # -->
-                    <div class="w-full h-[200px] bg-white border-[1px] border-gray-300">
-                    </div>
+
+                    <!-- Right Column -->
+                    <div class="flex flex-col w-full h-auto gap-1">
+                        <!-- Product #1 -->
+                        <div class="flex gap-5 w-full h-[200px] bg-white border-[1px] border-gray-300 p-3">
+                            <img src="/images/whiteTee.jpg" class="w-[260px] h-auto inline-block">
+                            <div class="flex flex-col gap-3 pt-2">
+                                <p class="font-semibold text-center text-[15px] mb-[-10px]">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                                <p class="font-semibold text-[15px] mb-10">$32.00</p>
+                                <ul class="flex gap-2">
+                                    <li class="w-[20px] h-[20px] rounded-full bg-black hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-red-700 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-purple-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-green-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                </ul>
+                                <ul class="flex gap-2">
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">XS</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">S</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">M</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">L</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">XL</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Product #2 -->
+                        <div class="flex gap-5 w-full h-[200px] bg-white border-[1px] border-gray-300 p-3">
+                            <img src="/images/whiteTee.jpg" class="w-[260px] h-auto inline-block">
+                            <div class="flex flex-col gap-3 pt-2">
+                                <p class="font-semibold text-center text-[15px] mb-[-10px]">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                                <p class="font-semibold text-[15px] mb-10">$32.00</p>
+                                <ul class="flex gap-2">
+                                    <li class="w-[20px] h-[20px] rounded-full bg-black hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-red-700 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-purple-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-green-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                </ul>
+                                <ul class="flex gap-2">
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">XS</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">S</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">M</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">L</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">XL</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Product #3 -->
+                        <div class="flex gap-5 w-full h-[200px] bg-white border-[1px] border-gray-300 p-3">
+                            <img src="/images/whiteTee.jpg" class="w-[260px] h-auto inline-block">
+                            <div class="flex flex-col gap-3 pt-2">
+                                <p class="font-semibold text-center text-[15px] mb-[-10px]">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                                <p class="font-semibold text-[15px] mb-10">$32.00</p>
+                                <ul class="flex gap-2">
+                                    <li class="w-[20px] h-[20px] rounded-full bg-black hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-red-700 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-purple-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-green-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                </ul>
+                                <ul class="flex gap-2">
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">XS</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">S</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">M</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">L</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">XL</li>
+                                </ul>
+                            </div>
+                        </div>            
+                        <!-- Product #4 -->
+                        <div class="flex gap-5 w-full h-[200px] bg-white border-[1px] border-gray-300 p-3">
+                            <img src="/images/whiteTee.jpg" class="w-[260px] h-auto inline-block">
+                            <div class="flex flex-col gap-3 pt-2">
+                                <p class="font-semibold text-center text-[15px] mb-[-10px]">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                                <p class="font-semibold text-[15px] mb-10">$32.00</p>
+                                <ul class="flex gap-2">
+                                    <li class="w-[20px] h-[20px] rounded-full bg-black hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-red-700 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-purple-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-green-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                </ul>
+                                <ul class="flex gap-2">
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">XS</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">S</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">M</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">L</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">XL</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Product #5 -->
+                        <div class="flex gap-5 w-full h-[200px] bg-white border-[1px] border-gray-300 p-3">
+                            <img src="/images/whiteTee.jpg" class="w-[260px] h-auto inline-block">
+                            <div class="flex flex-col gap-3 pt-2">
+                                <p class="font-semibold text-center text-[15px] mb-[-10px]">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                                <p class="font-semibold text-[15px] mb-10">$32.00</p>
+                                <ul class="flex gap-2">
+                                    <li class="w-[20px] h-[20px] rounded-full bg-black hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-red-700 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-purple-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                    <li class="w-[20px] h-[20px] rounded-full bg-green-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                                </ul>
+                                <ul class="flex gap-2">
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">XS</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">S</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">M</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">L</li>
+                                    <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">XL</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>                    
                 </div>
 
-                <!-- Right Column -->
-                <div class="flex flex-col w-full h-auto gap-1">
-                    <!-- Product # -->
-                    <div class="w-full h-[200px] bg-white border-[1px] border-gray-300">
-                    </div>
-                    <!-- Product # -->
-                    <div class="w-full h-[200px] bg-white border-[1px] border-gray-300">
-                    </div>
-                    <!-- Product # -->
-                    <div class="w-full h-[200px] bg-white border-[1px] border-gray-300">
-                    </div>           
-                    <!-- Product # -->
-                    <div class="w-full h-[200px] bg-white border-[1px] border-gray-300">
-                    </div>
+                <!-- Product Pages -->
+                <div class="absolute bottom-0 flex gap-2 right-[40%]"> 
+                    <span class="w-[40px] h-auto text-center border-[1px] border-blue-500 rounded-[4px] text-blue-500"> < </span>
+                    <ul class="flex gap-2">
+                        <li class="w-[30px] h-auto text-center border-[1px] border-blue-500 rounded-[4px] bg-blue-500 text-white">1</li>
+                        <li class="w-[30px] h-auto text-center border-[1px] border-blue-500 rounded-[4px] text-blue-500">2</li>
+                        <li class="w-[30px] h-auto text-center border-[1px] border-blue-500 rounded-[4px] text-blue-500">3</li>
+                        <li class="w-[30px] h-auto text-center border-[1px] border-blue-500 rounded-[4px] text-blue-500">4</li>
+                        <li class="w-[30px] h-auto text-center border-[1px] border-blue-500 rounded-[4px] text-blue-500">5</li>
+                    </ul>
+                    <span class="w-[40px] h-auto text-center border-[1px] border-blue-500 rounded-[4px] text-blue-500"> > </span>
                 </div>
             </section>
             <!-- [2] Products Section - [END] -->
@@ -293,9 +526,26 @@
     <!--=============/ 
      [1.] Footer
     /==============-->
-    <footer>
-
-    </footer>
+    <section class="relative flex items-center justify-center w-full h-[125px] bg-white border-t-[1px] border-gray-500">
+        <h1 id="topBar__logo" class="p-1 mr-10 font-mono text-3xl font-bold text-black border-2 border-black">Blajev Style</h1>
+        <ul class="flex justify-center gap-[25px] text-lg font-medium">
+            <a href="#">
+                <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Home</li>
+            </a>
+            <li>|</li>
+            <a href="#">
+                <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Shop</li>
+            </a>
+            <li>|</li>
+            <a href="#">
+                <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">About</li>
+            </a>
+            <li>|</li>
+            <a href="#">
+                <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Contact</li>
+            </a>
+        </ul>
+    </section>
     <script src="javascript.js"></script>
 </body>
 </html>

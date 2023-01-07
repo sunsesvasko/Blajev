@@ -96,13 +96,13 @@
     </header>
 
     <!--=============/ 
-     [1.] Main Content
+     [2.] Main Content
     /==============-->
-    <main class="flex gap-14 w-full h-[1200px] bg-[#f3f4f5] p-8">
+    <main class="flex gap-14 w-full h-[1200px] max-[1385px]:h-[2200px] p-8">
         <!-- Main Section - [START] -->
         <section class="flex w-full h-auto gap-10">
             <!-- [1] Left Filter Section - [START] -->
-            <section class="flex flex-col w-[300px] h-[940px] bg-white p-2 gap-3">
+            <section class="flex flex-col w-[300px] h-[940px] bg-white p-2 gap-3 max-[1267px]:h-[960px] max-[820px]:hidden">
                 <!-- Search Form - [START] -->
                 <form id="topBar__search--form" class="items-center border-[1px] border-gray-300 rounded-[4px]">
                     <!-- Search Icon with Input Field -->
@@ -280,17 +280,17 @@
             <!-- [1] Left Filter Section - [END] -->
 
             <!-- [2] Products Section - [START] -->
-            <section class="flex flex-col gap-3 w-full h-[1100px] relative">
+            <section class="flex flex-col gap-3 w-full h-[1100px] max-[1385px]:h-[2115px] relative">
 
                 <!-- Both Columns Container -->
-                <div class="flex">
-                    <!-- Left Column -->
+                <div class="flex max-[1385px]:flex-col">
+                    <!-- Left Product Column -->
                     <div class="flex flex-col w-full h-auto gap-1">
                         <!-- Product #1 -->
                         <div class="flex gap-5 w-full h-[200px] bg-white border-[1px] border-gray-300 p-3">
                             <img src="/images/whiteTee.jpg" class="w-[260px] h-auto inline-block">
-                            <div class="flex flex-col gap-3 pt-2">
-                                <p class="font-semibold text-center text-[15px] mb-[-10px]">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                            <div class="flex flex-col gap-3 pt-2 max-[820px]:justify-center">
+                                <a href="productPage.html"><p class="font-semibold text-center text-[15px] mb-[-10px]">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p></a>
                                 <p class="font-semibold text-[15px] mb-10">$32.00</p>
                                 <ul class="flex gap-2">
                                     <li class="w-[20px] h-[20px] rounded-full bg-black hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
@@ -310,7 +310,7 @@
                         <!-- Product #2 -->
                         <div class="flex gap-5 w-full h-[200px] bg-white border-[1px] border-gray-300 p-3">
                             <img src="/images/whiteTee.jpg" class="w-[260px] h-auto inline-block">
-                            <div class="flex flex-col gap-3 pt-2">
+                            <div class="flex flex-col gap-3 pt-2 max-[820px]:justify-center">
                                 <p class="font-semibold text-center text-[15px] mb-[-10px]">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
                                 <p class="font-semibold text-[15px] mb-10">$32.00</p>
                                 <ul class="flex gap-2">
@@ -331,7 +331,7 @@
                         <!-- Product #3 -->
                         <div class="flex gap-5 w-full h-[200px] bg-white border-[1px] border-gray-300 p-3">
                             <img src="/images/whiteTee.jpg" class="w-[260px] h-auto inline-block">
-                            <div class="flex flex-col gap-3 pt-2">
+                            <div class="flex flex-col gap-3 pt-2 max-[820px]:justify-center">
                                 <p class="font-semibold text-center text-[15px] mb-[-10px]">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
                                 <p class="font-semibold text-[15px] mb-10">$32.00</p>
                                 <ul class="flex gap-2">
@@ -348,11 +348,11 @@
                                     <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">XL</li>
                                 </ul>
                             </div>
-                        </div>            
+                        </div>           
                         <!-- Product #4 -->
                         <div class="flex gap-5 w-full h-[200px] bg-white border-[1px] border-gray-300 p-3">
                             <img src="/images/whiteTee.jpg" class="w-[260px] h-auto inline-block">
-                            <div class="flex flex-col gap-3 pt-2">
+                            <div class="flex flex-col gap-3 pt-2 max-[820px]:justify-center">
                                 <p class="font-semibold text-center text-[15px] mb-[-10px]">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
                                 <p class="font-semibold text-[15px] mb-10">$32.00</p>
                                 <ul class="flex gap-2">
@@ -373,7 +373,7 @@
                         <!-- Product #5 -->
                         <div class="flex gap-5 w-full h-[200px] bg-white border-[1px] border-gray-300 p-3">
                             <img src="/images/whiteTee.jpg" class="w-[260px] h-auto inline-block">
-                            <div class="flex flex-col gap-3 pt-2">
+                            <div class="flex flex-col gap-3 pt-2 max-[820px]:justify-center">
                                 <p class="font-semibold text-center text-[15px] mb-[-10px]">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
                                 <p class="font-semibold text-[15px] mb-10">$32.00</p>
                                 <ul class="flex gap-2">
@@ -393,12 +393,12 @@
                         </div>
                     </div>
 
-                    <!-- Right Column -->
+                    <!-- Right Product Column -->
                     <div class="flex flex-col w-full h-auto gap-1">
                         <!-- Product #1 -->
                         <div class="flex gap-5 w-full h-[200px] bg-white border-[1px] border-gray-300 p-3">
                             <img src="/images/whiteTee.jpg" class="w-[260px] h-auto inline-block">
-                            <div class="flex flex-col gap-3 pt-2">
+                            <div class="flex flex-col gap-3 pt-2 max-[820px]:justify-center">
                                 <p class="font-semibold text-center text-[15px] mb-[-10px]">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
                                 <p class="font-semibold text-[15px] mb-10">$32.00</p>
                                 <ul class="flex gap-2">
@@ -419,7 +419,7 @@
                         <!-- Product #2 -->
                         <div class="flex gap-5 w-full h-[200px] bg-white border-[1px] border-gray-300 p-3">
                             <img src="/images/whiteTee.jpg" class="w-[260px] h-auto inline-block">
-                            <div class="flex flex-col gap-3 pt-2">
+                            <div class="flex flex-col gap-3 pt-2 max-[820px]:justify-center">
                                 <p class="font-semibold text-center text-[15px] mb-[-10px]">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
                                 <p class="font-semibold text-[15px] mb-10">$32.00</p>
                                 <ul class="flex gap-2">
@@ -440,7 +440,7 @@
                         <!-- Product #3 -->
                         <div class="flex gap-5 w-full h-[200px] bg-white border-[1px] border-gray-300 p-3">
                             <img src="/images/whiteTee.jpg" class="w-[260px] h-auto inline-block">
-                            <div class="flex flex-col gap-3 pt-2">
+                            <div class="flex flex-col gap-3 pt-2 max-[820px]:justify-center">
                                 <p class="font-semibold text-center text-[15px] mb-[-10px]">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
                                 <p class="font-semibold text-[15px] mb-10">$32.00</p>
                                 <ul class="flex gap-2">
@@ -457,11 +457,11 @@
                                     <li class="w-[25px] h-auto rounded-xs hover:cursor-pointer border-[1px] border-gray-300 text-[12px] font-bold text-gray-500 text-center hover:bg-gray-300">XL</li>
                                 </ul>
                             </div>
-                        </div>            
+                        </div>           
                         <!-- Product #4 -->
                         <div class="flex gap-5 w-full h-[200px] bg-white border-[1px] border-gray-300 p-3">
                             <img src="/images/whiteTee.jpg" class="w-[260px] h-auto inline-block">
-                            <div class="flex flex-col gap-3 pt-2">
+                            <div class="flex flex-col gap-3 pt-2 max-[820px]:justify-center">
                                 <p class="font-semibold text-center text-[15px] mb-[-10px]">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
                                 <p class="font-semibold text-[15px] mb-10">$32.00</p>
                                 <ul class="flex gap-2">
@@ -482,7 +482,7 @@
                         <!-- Product #5 -->
                         <div class="flex gap-5 w-full h-[200px] bg-white border-[1px] border-gray-300 p-3">
                             <img src="/images/whiteTee.jpg" class="w-[260px] h-auto inline-block">
-                            <div class="flex flex-col gap-3 pt-2">
+                            <div class="flex flex-col gap-3 pt-2 max-[820px]:justify-center">
                                 <p class="font-semibold text-center text-[15px] mb-[-10px]">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
                                 <p class="font-semibold text-[15px] mb-10">$32.00</p>
                                 <ul class="flex gap-2">
@@ -500,11 +500,11 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>                    
+                    </div>               
                 </div>
 
                 <!-- Product Pages -->
-                <div class="absolute bottom-0 flex gap-2 right-[40%]"> 
+                <div class="absolute bottom-0 flex gap-2 right-[40%] max-[820px]:right-[30%] max-[563px]:right-[20%]"> 
                     <span class="w-[40px] h-auto text-center border-[1px] border-blue-500 rounded-[4px] text-blue-500"> < </span>
                     <ul class="flex gap-2">
                         <li class="w-[30px] h-auto text-center border-[1px] border-blue-500 rounded-[4px] bg-blue-500 text-white">1</li>
@@ -524,17 +524,17 @@
     </main>
 
     <!--=============/ 
-     [1.] Footer
+     [3.] Footer
     /==============-->
     <section class="relative flex items-center justify-center w-full h-[125px] bg-white border-t-[1px] border-gray-500">
-        <h1 id="topBar__logo" class="p-1 mr-10 font-mono text-3xl font-bold text-black border-2 border-black">Blajev Style</h1>
+        <h1 id="topBar__logo" class="p-1 mr-10 font-mono text-3xl font-bold text-black border-2 border-black max-[642px]:hidden">Blajev Style</h1>
         <ul class="flex justify-center gap-[25px] text-lg font-medium">
-            <a href="#">
+            <a href="mainPage.html">
                 <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Home</li>
             </a>
             <li>|</li>
-            <a href="#">
-                <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Shop</li>
+            <a href="shop.html">
+                <li class="transition ease-in-out border-b-2 border-black delay-50 hover:-translate-y-1 hover:scale-110 duration300">Shop</li>
             </a>
             <li>|</li>
             <a href="#">
@@ -553,3 +553,4 @@
 <!-- TO-DO -->
 <!-- 1. Make Color Buttons Work -->
 <!-- 2. Make Drop-Down List Items Lead to Somewhere -->
+<!-- 3. Make Page Button Swiper -->

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product Page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+<body>
+    <!--=============/ 
+     [1.] Header
+    /==============-->
+    <header id="header" class="relative w-full h-auto">
+        <!-- navBar Container -->
+        <div class="flex items-center justify-start p-6 bg-white border-b-[1px] border-gray-500 gap-10 relative">
+            <!-- [1] Logo - [START] -->
+            <h1 id="topBar__logo" class="p-1 font-mono text-3xl font-bold text-black border-2 border-black">Blajev Style</h1>
+            <!-- [1] lOGO - [END] -->
+            
+            <!-- [2] Navigation - [START] -->
+            <ul class="flex justify-around gap-6 font-semibold text-black max-[825px]:hidden">
+                <a href="mainPage.html">
+                    <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Home</li>
+                </a>
+                <li>|</li>
+                <a href="shop.html">
+                    <li class="pb-[1px] transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Shop</li>
+                </a>
+                <li>|</li>
+                <a href="#">
+                    <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">About</li>
+                </a>
+                <li>|</li>
+                <a href="#">
+                    <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Contact</li>
+                </a>
+            </ul>
+            <!-- [2] Navigation - [END] -->
+           
+            <!-- [3] Shopping Cart & Favorites Buttons - [START] -->
+            <div class="absolute right-[30px] flex max-[1200px]:right-[80px]">
+                <a id="shopping__cart" href="">
+                    <svg class="text-black transition duration-100 ease-in-out delay-150 cursor-pointer hover:-translate-y-1 hover:scale-100"
+                    width="40" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 26 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.75 7.75h11.5l-1.637 6.958a2 2 0 0 1-1.947 1.542h-4.127a2 2 0 0 1-1.933-1.488L7.75 7.75Zm0 0-.75-3H4.75">
+                    </path>
+                    <path fill="currentColor" stroke="none" d="M10 18a1 1 0 1 0 0 2 1 1 0 1 0 0-2z"></path>
+                    <path fill="currentColor" stroke="none" d="M17 18a1 1 0 1 0 0 2 1 1 0 1 0 0-2z"></path>
+                </svg>  
+                </a>
+                <svg class="text-black transition duration-100 ease-in-out delay-150 cursor-pointer hover:-translate-y-1 hover:scale-100"
+                width="40" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" viewBox="-3 0 30 25" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                </path>
+            </svg>
+            </div>
+            <!-- [3] Shopping Cart & Favorites Buttons - [END] -->
+
+            <!-- [4] Hamburger Icon - [START] -->
+            <label class="md:hidden">
+                <input type="checkbox">
+                <span class="menu"> <span class="hamburger"></span></span>
+                <ul class="flex gap-6 font-semibold">
+                    <a href="mainPage.html">
+                        <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Home</li>
+                    </a>
+                    <li>|</li>
+                    <a href="shop.html  ">
+                        <li class="pb-[1px] border-b-2 border-black transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Shop</li>
+                    </a>
+                    <li>|</li>
+                    <a href="#">
+                        <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">About</li>
+                    </a>
+                    <li>|</li>
+                    <a href="#">
+                        <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Contact</li>
+                    </a>
+                </ul>
+            </label>
+            <!-- [4] Hamburger Icon - [END] -->
+        </div>
+        
+        </div>
+    </header>
+
+    <!--=============/ 
+     [2.] Main Content
+    /==============-->
+    <main class="flex gap-10 w-full h-[1200px] flex-col justify-center items-center py-7">
+        <!-- Product Main Container -->
+        <section class="w-[800px] h-[700px] bg-white border-[1px] border-gray-300 rounded-md p-5 flex gap-3">
+            <img src="/images/productTest.jpg" class="w-[350px] h-auto">
+            <div class="flex flex-col gap-2">
+                <p class="font-semibold">Cotton White Tee</p>
+                <p class="font-semibold">$32.00</p>
+                <p class="opacity-[0.5] text-[14px] font-semibold">Color</p>
+                <ul class="flex gap-2">
+                    <li class="w-[20px] h-[20px] rounded-full bg-black hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                    <li class="w-[20px] h-[20px] rounded-full bg-red-700 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                    <li class="w-[20px] h-[20px] rounded-full bg-purple-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                    <li class="w-[20px] h-[20px] rounded-full bg-green-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                </ul>
+                <div class="flex gap-1">
+                    <button class="w-[100px] h-auto py-1 rounded-[4px] bg-[#bdbdbd] text-white text-[12px]">Add to Wishlist</button>
+                    <button class="w-[100px] h-auto py-1 rounded-[4px] bg-[#2091f9] text-white text-[12px]">Add to Card</button>
+                </div>
+                <h3>Product Description</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error modi rerum consequatur obcaecati repellendus 
+                    optio deleniti necessitatibus. Doloremque a quia iste aliquid ipsam odit, est consectetur quod tempore suscipit vitae.
+                </p>
+                <div class="border-[1px] border-gray-300 rounded-md">
+                    <!-- Product Composition -->
+                    <div class="border-b-[1px] border-gray-300 relative p-3">
+                        <p class="font-semibold text-[15px]">Composition</p>
+                        <button type="button" class="collapsible absolute top-[12px] right-[10px] bg-gray-300 w-[15px] h-[15px] text-xs rounded-xl text-gray-500 active:bg-blue-500 active:text-white hover:bg-blue-500 hover:text-white mt-[4px]">+</button>
+                        <ul id="accessories" class="flex flex-col gap-[1px] pl-1">
+                            <li class="text-[14px] text-gray-400">Belts</li>
+                            <li class="text-[14px] text-gray-400">Bags</li>
+                            <li class="text-[14px] text-gray-400">Wallets</li>
+                            <li class="text-[14px] text-gray-400">Scarves</li>
+                            <li class="text-[14px] text-gray-400">Hats & Caps</li>
+                            <li class="text-[14px] text-gray-400">Gloves</li>
+                        </ul>
+                    </div>
+                    <!-- Shipping Options -->
+                    <div class="relative p-3">
+                        <p class="font-semibold text-[15px]">Shipping Options</p>
+                        <button type="button" class="collapsible absolute top-[12px] right-[10px] bg-gray-300 w-[15px] h-[15px] text-xs rounded-xl text-gray-500 active:bg-blue-500 active:text-white hover:bg-blue-500 hover:text-white mt-[4px]">+</button>
+                        <ul id="accessories" class="flex flex-col gap-[1px] pl-1">
+                            <li class="text-[14px] text-gray-400">Belts</li>
+                            <li class="text-[14px] text-gray-400">Bags</li>
+                            <li class="text-[14px] text-gray-400">Wallets</li>
+                            <li class="text-[14px] text-gray-400">Scarves</li>
+                            <li class="text-[14px] text-gray-400">Hats & Caps</li>
+                            <li class="text-[14px] text-gray-400">Gloves</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Description, Reviews, More Products -->
+        <section class="w-[700px] h-[300px] bg-white border-[1px] border-gray-300 rounded-md">
+
+        </section>
+
+        <!-- Other Products -->
+        <section class="w-[700px] h-[300px] bg-white border-[1px] border-gray-300 rounded-md">
+
+        </section>
+    </main>
+
+    <!--=============/ 
+     [3.] Footer
+    /==============-->
+    <section class="relative flex items-center justify-center w-full h-[125px] bg-white border-t-[1px] border-gray-500">
+        <h1 id="topBar__logo" class="p-1 mr-10 font-mono text-3xl font-bold text-black border-2 border-black max-[642px]:hidden">Blajev Style</h1>
+        <ul class="flex justify-center gap-[25px] text-lg font-medium">
+            <a href="mainPage.html">
+                <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Home</li>
+            </a>
+            <li>|</li>
+            <a href="shop.html">
+                <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Shop</li>
+            </a>
+            <li>|</li>
+            <a href="#">
+                <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">About</li>
+            </a>
+            <li>|</li>
+            <a href="#">
+                <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Contact</li>
+            </a>
+        </ul>
+    </section>
+    <script src="javascript.js"></script>  
+</body>
+</html>
+
+<!-- Add User Review & Other Products Swiper -->
+<!-- Add Show More/Less on Product Description -->
+<!-- Add Shadow Effect Around Product Main Container -->

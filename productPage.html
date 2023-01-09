@@ -93,67 +93,139 @@
     <!--=============/ 
      [2.] Main Content
     /==============-->
-    <main class="flex gap-10 w-full h-[1200px] flex-col justify-center items-center py-7">
+    <main class="flex flex-col items-center justify-center w-full h-auto gap-10 pt-7">
         <!-- Product Main Container -->
-        <section class="w-[800px] h-[800px] bg-white border-[1px] border-gray-300 rounded-md p-5 flex gap-3">
-            <img src="/images/productTest.jpg" class="w-[400px] h-auto">
-            <div class="flex flex-col gap-2">
-                <p class="font-semibold">Cotton White Tee</p>
-                <p class="font-semibold">$32.00</p>
-                <p class="opacity-[0.5] text-[14px] font-semibold">Color</p>
-                <ul class="flex gap-2">
+        <section class="w-[1000px] h-[700px] bg-white border-[1px] border-gray-300 rounded-md p-5 flex gap-3">
+            <img src="/images/productTest.jpg" class="w-[500px] h-auto">
+            <!-- Product Info -->
+            <div class="flex flex-col items-center gap-2">
+                <p class="font-semibold text-[22px]">Cotton White Tee</p>
+                <p class="font-semibold text-[20px] mb-3">$32.00</p>
+                <!-- Colors -->
+                <p class="opacity-[0.5] font-semibold text-[18px]">Color</p>
+                <ul class="flex gap-2 mb-4">
                     <li class="w-[20px] h-[20px] rounded-full bg-black hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
                     <li class="w-[20px] h-[20px] rounded-full bg-red-700 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
                     <li class="w-[20px] h-[20px] rounded-full bg-purple-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
                     <li class="w-[20px] h-[20px] rounded-full bg-green-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                    <li class="w-[20px] h-[20px] rounded-full bg-blue-800 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                    <li class="w-[20px] h-[20px] rounded-full bg-gray-500 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                    <li class="w-[20px] h-[20px] rounded-full bg-pink-600 hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
+                    <li class="w-[20px] h-[20px] rounded-full bg-[#964B00] hover:cursor-pointer hover:border-[2px] hover:border-gray-400"></li>
                 </ul>
-                <div class="flex gap-1">
-                    <button class="w-[100px] h-auto py-1 rounded-[4px] bg-[#bdbdbd] text-white text-[12px]">Add to Wishlist</button>
-                    <button class="w-[100px] h-auto py-1 rounded-[4px] bg-[#2091f9] text-white text-[12px]">Add to Card</button>
+                <!-- Buttons -->
+                <div class="flex gap-1 mb-6">
+                    <button class="w-[150px] h-auto py-1 rounded-[4px] bg-[#bdbdbd] text-white text-[15px]">Add to Wishlist</button>
+                    <button class="w-[150px] h-auto py-1 rounded-[4px] bg-[#2091f9] text-white text-[15px]">Add to Card</button>
                 </div>
-                <h3>Product Description</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error modi rerum consequatur obcaecati repellendus 
-                    optio deleniti necessitatibus. Doloremque a quia iste aliquid ipsam odit, est consectetur quod tempore suscipit vitae.
+                <!-- Prod Desc -->
+                <h3 class="font-semibold text-[20px]">Product Description</h3>
+                <p class="opacity-[0.55] text-center mb-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Error modi rerum consequatur obcaecati repellendus 
+                    optio deleniti necessitatibus. Doloremque a quia iste aliquid ipsam odit, est consectetur quod 
+                    tempore suscipit vitae.
                 </p>
-                <div class="border-[1px] border-gray-300 rounded-md">
+                <!-- Collapsible Menu -->
+                <div class="border-[1px] border-gray-300 rounded-md mb-6 w-[200px]">
                     <!-- Product Composition -->
                     <div class="border-b-[1px] border-gray-300 relative p-3">
-                        <p class="font-semibold text-[15px]">Composition</p>
-                        <button type="button" class="collapsible absolute top-[12px] right-[10px] bg-gray-300 w-[15px] h-[15px] text-xs rounded-xl text-gray-500 active:bg-blue-500 active:text-white hover:bg-blue-500 hover:text-white mt-[4px]">+</button>
+                        <p class="font-bold">Composition</p>
+                        <button type="button" class="collapsible absolute top-[12px] right-[10px] 
+                        bg-gray-300 w-[15px] h-[15px] text-xs rounded-xl text-gray-500 active:bg-blue-500 
+                        active:text-white hover:bg-blue-500 hover:text-white mt-[4px]">+</button>
                         <ul id="accessories" class="flex flex-col gap-[1px] pl-1">
-                            <li class="text-[14px] text-gray-400">Belts</li>
-                            <li class="text-[14px] text-gray-400">Bags</li>
-                            <li class="text-[14px] text-gray-400">Wallets</li>
-                            <li class="text-[14px] text-gray-400">Scarves</li>
-                            <li class="text-[14px] text-gray-400">Hats & Caps</li>
-                            <li class="text-[14px] text-gray-400">Gloves</li>
+                            <li class="text-[12px] text-gray-500 mt-2">- Cotton 100%</li>
+                            <li class="text-[12px] text-gray-500 mt-2">- Elastic Rib</li>
                         </ul>
                     </div>
                     <!-- Shipping Options -->
                     <div class="relative p-3">
-                        <p class="font-semibold text-[15px]">Shipping Options</p>
+                        <p class="font-bold">Shipping Options</p>
                         <button type="button" class="collapsible absolute top-[12px] right-[10px] bg-gray-300 w-[15px] h-[15px] text-xs rounded-xl text-gray-500 active:bg-blue-500 active:text-white hover:bg-blue-500 hover:text-white mt-[4px]">+</button>
                         <ul id="accessories" class="flex flex-col gap-[1px] pl-1">
-                            <li class="text-[14px] text-gray-400">Belts</li>
-                            <li class="text-[14px] text-gray-400">Bags</li>
-                            <li class="text-[14px] text-gray-400">Wallets</li>
-                            <li class="text-[14px] text-gray-400">Scarves</li>
-                            <li class="text-[14px] text-gray-400">Hats & Caps</li>
-                            <li class="text-[14px] text-gray-400">Gloves</li>
+                            <li class="text-[12px] text-gray-500 mt-2">- Standard Office Delivery</li>
+                            <li class="text-[12px] text-gray-500">- Express Office Delivery</li>
+                            <li class="text-[12px] text-gray-500">- Home Delivery</li>       
                         </ul>
                     </div>
+                </div>
+                <!-- Share This Product Icons -->
+                <p class="text-[15px] opacity-[0.6] font-bold">Share this product:</p>
+                <div class="flex gap-2">
+                    <img src="/images/Product/twitter.png" class="w-[40px] h-auto">
+                    <img src="/images/Product/facebook.png" class="w-[40px] h-auto">
+                    <img src="/images/Product/linkedin.png" class="w-[40px] h-auto">
+                    <img src="/images/Product/more.png" class="w-[40px] h-auto">
                 </div>
             </div>
         </section>
 
         <!-- Description, Reviews, More Products -->
-        <section class="w-[700px] h-[300px] bg-white border-[1px] border-gray-300 rounded-md">
-
+        <section class="w-[1000px] h-auto">
+            <!-- Description, Reviews, More Products -->
+            <ul class="flex">
+                <li class="text-[13px] font-bold border-b-2 border-[#2091f9] p-2 text-[#2091f9]">Description</li>
+                <li class="text-[13px] font-bold text-gray-500 border-b-2 border-gray-200 p-2">Reviews (20)</li>
+                <li class="text-[13px] font-bold text-gray-500 border-b-2 border-gray-200 p-2 pr-[71.03%]">More Products</li>
+            </ul>
+            <!-- Product Description -->
+            <p class="text-[13px] my-5 w-[60%] leading-5">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit libero ex exercitationem officiis praesentium ad 
+                adipisci quis, perferendis iure, iste facilis reprehenderit culpa quas fugiat quia ipsam sapiente nulla magnam?
+            </p>
+            <!-- Product Features -->
+            <p class="text-[13px] font-bold">Product Features</p>
+            <ul class="leading-7">
+                <li class="text-[13px]">- Unlimited product updates</li>
+                <li class="text-[13px]">- Unlimited Shares</li>
+                <li class="text-[13px]">- Every feature in Blajev Style</li>
+            </ul>
         </section>
 
         <!-- Other Products -->
-        <section class="w-[700px] h-[300px] bg-white border-[1px] border-gray-300 rounded-md">
-
+        <section class="w-full h-auto bg-white border-[1px] border-gray-300 rounded-md flex flex-col justify-center items-center">
+            <h1 class="text-[24px] font-bold m-10">Other Products</h1>
+            <!-- Wrapper -->
+            <div id="wrapper" class="relative w-[1000px] max-w-[964px] mb-16">
+                <div id="carousel" class="overflow-auto scroll-smooth">
+                  <div id="content" class="flex gap-[16px]">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                    <img src="/images/productTest.jpg" class=" w-[175px] h-auto">
+                  </div>
+                </div>
+                <button id="prev" class="flex items-center justify-center bg-white border-[1px] border-gray-300 p-[8px] rounded-[50%] cursor-pointer absolute  top-[50%] left-[-4.5%]">
+                    <span class="w-[25px] h-auto text-[#2091f9] font-bold"><</span>
+                </button>
+                <button id="next" class="flex items-center justify-center bg-white border-[1px] border-gray-300 p-[8px] rounded-[50%] cursor-pointer absolute top-[50%] right-[-4.5%]">
+                <span class="w-[25px] h-auto text-[#2091f9] font-bold">></span>
+                </button>
         </section>
     </main>
 
@@ -187,3 +259,4 @@
 <!-- Add User Review & Other Products Swiper -->
 <!-- Add Show More/Less on Product Description -->
 <!-- Add Shadow Effect Around Product Main Container -->
+<!-- Add HTML & CSS Tabs for Description, Reviews & More Products: https://alvarotrigo.com/blog/html-css-tabs/ -->

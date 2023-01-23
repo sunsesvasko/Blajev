@@ -63,3 +63,5 @@ let width = carousel.offsetWidth;
 window.addEventListener("resize", e => (width = carousel.offsetWidth));
 
 // ============================
+
+// These are the changes added to the merge-later branch

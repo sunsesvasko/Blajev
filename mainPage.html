@@ -21,6 +21,7 @@
             <!-- [1] Logo -->
             <h1 id="topBar__logo" class="p-1 font-mono text-3xl font-bold text-black border-2 border-black">Blajev Style</h1>
 
+            <!-- [2] Page LInks -->
             <ul class="flex justify-around gap-6 font-semibold text-black pl-[50px] max-[1400px]:pl-[0px] max-[825px]:hidden">
                 <a href="mainPage.html">
                     <li class="pb-[1px] transition ease-in-out border-b-2 border-black delay-50 hover:-translate-y-1 hover:scale-110 duration300">Home</li>
@@ -39,7 +40,7 @@
                 </a>
             </ul>
             
-            <!-- [2] Search Form - [START] -->
+            <!-- [3] Search Form - [START] -->
             <form id="topBar__search--form" class="items-center hidden border-b-[1px] border-black md:flex ml-[60px] max-[1400px]:ml-[0px]">
                 <!-- Search Icon with Input Field -->
                 <div class="relative w-full">
@@ -55,9 +56,9 @@
                     <input type="text" id="search" class="w-96 pl-10 p-2.5" placeholder="| Search for a product" required>
                 </div>
             </form>
-            <!-- [2] Search Form - [END] -->
+            <!-- [3] Search Form - [END] -->
 
-            <!-- [3] Shopping Cart & Favorites Buttons - [START] -->
+            <!-- [4] Shopping Cart & Favorites Buttons - [START] -->
             <div class="absolute flex right-[30px] max-[1200px]:right-[80px]">
                 <a id="shopping__cart" href="">
                     <svg class="text-black transition duration-100 ease-in-out cursor-pointer delay-150rounded-lg hover:-translate-y-1 hover:scale-100"
@@ -79,9 +80,9 @@
                 </path>
             </svg>
             </div>
-            <!-- [3] Shopping Cart & Favorites Buttons - [END] -->
+            <!-- [4] Shopping Cart & Favorites Buttons - [END] -->
 
-            <!-- [4] Hamburger Icon - [START] -->
+            <!-- [5] Hamburger Icon - [START] -->
             <label class="md:hidden">
                 <input type="checkbox">
                 <span class="menu"> <span class="hamburger"></span></span>
@@ -103,7 +104,7 @@
                     </a>
                 </ul>
             </label>
-            <!-- [4] Hamburger Icon - [END] -->
+            <!-- [5] Hamburger Icon - [END] -->
         </div>
         </div>
 
@@ -239,28 +240,30 @@
             <div class="latestProducts--secondRow flex gap-[40px] max-[825px]:flex-col">  
             </div>
         </section>
-        <!-- [4.] Footer -->
-        <section class="relative flex items-center justify-center w-full h-[125px] bg-white border-t-[1px] border-gray-500">
-            <h1 id="topBar__logo" class="p-1 mr-10 font-mono text-3xl font-bold text-black border-2 border-black max-[660px]:hidden">Blajev Style</h1>
-            <ul class="flex justify-center gap-[25px] text-lg font-medium">
-                <a href="mainPage.html">
-                    <li class="transition ease-in-out border-b-2 border-black delay-50 hover:-translate-y-1 hover:scale-110 duration300">Home</li>
-                </a>
-                <li>|</li>
-                <a href="shop.html">
-                    <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Shop</li>
-                </a>
-                <li>|</li>
-                <a href="#">
-                    <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">About</li>
-                </a>
-                <li>|</li>
-                <a href="#">
-                    <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Contact</li>
-                </a>
-            </ul>
-        </section>
     </main>
+    <!--=============/ 
+     [3.] Footer
+    /==============-->
+    <footer class="relative flex items-center justify-center w-full h-[125px] bg-white border-t-[1px] border-gray-500">
+        <h1 id="topBar__logo" class="p-1 mr-10 font-mono text-3xl font-bold text-black border-2 border-black max-[660px]:hidden">Blajev Style</h1>
+        <ul class="flex justify-center gap-[25px] text-lg font-medium">
+            <a href="mainPage.html">
+                <li class="transition ease-in-out border-b-2 border-black delay-50 hover:-translate-y-1 hover:scale-110 duration300">Home</li>
+            </a>
+            <li>|</li>
+            <a href="shop.html">
+                <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Shop</li>
+            </a>
+            <li>|</li>
+            <a href="#">
+                <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">About</li>
+            </a>
+            <li>|</li>
+            <a href="#">
+                <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Contact</li>
+            </a>
+        </ul>
+    </footer>
     <script src="mainPage.js"></script>
     <script src="javascript.js"></script>
 </body>
@@ -272,5 +275,4 @@
 <!-- 3. Makes JS Work -->
 <!-- 4. Add More Comments -->
 <!-- 5. Make Hamburger Menu Work -->
-<!-- ss -->
 <!-- changes -->

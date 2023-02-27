@@ -31,3 +31,5 @@ const displayLatestProducts = function() {
 // Implement displaying random products instead of fixed
 
 // Generate Latest Products - [END] 
+
+document.getElementById('sign-up').addEventListener('click', () => { location.href = './signUp.html' } )

@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
+import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -23,8 +23,6 @@ let firstName = document.getElementById('firstname');
 let lastName = document.getElementById('lastname');
 let email = document.getElementById('email');
 let password = document.getElementById('password');
-let currentPage = 'index';
-let isLoggedIn = false;
 
 // Register
 window.signup = function(e) {
@@ -46,24 +44,6 @@ window.signup = function(e) {
     lastName.value = '';
     email.value = '';
     password.value = '';
-};
-
-// Login
-
-window.login = function(e) {
-    e.preventDefault();
-    let obj = {
-        email: email.value,
-        password: password.value,
-    };
-    signInWithEmailAndPassword(auth, obj.email, obj.password).then(function(success) {
-        alert("Logged In Successfully!");
-        location.href = "index.html";
-        isLoggedIn = true;
-    }).catch(function(err) {
-        alert(err);
-    });
-    console.log(obj);
 };
 
 /*

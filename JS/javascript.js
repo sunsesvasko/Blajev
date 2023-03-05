@@ -1,4 +1,3 @@
-
 // ============================ Collapsible Menu
 
 var coll = document.getElementsByClassName("collapsible");

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>About Page</title>
+</head>
+<body>
+    <header id="header" class="relative h-[800px] w-full bg-[url('/images/MainPage/homeModel.jpg')] bg-cover bg-[center_top_0rem] bg-no-repeat">
+        <div class="bg-white border-b-[1px] border-gray-500">
+        <!-- TopBar Container -->
+        <div id="topBar" class="relative flex items-center justify-start gap-10 p-6">
+            <!-- [1] Logo -->
+            <a id="topBar__logo" class="p-1 font-mono text-3xl font-bold text-black border-2 border-black" href="./index.html">Blajev Style</a>
+
+            <!-- [2] Page LInks -->
+            <ul class="flex justify-around gap-6 font-semibold text-black pl-[50px] max-[1400px]:pl-[0px] max-[850px]:hidden">
+                <a href="./index.html">
+                    <li class="pb-[1px] transition ease-in-out border-b-2 border-black delay-50 hover:-translate-y-1 hover:scale-110 duration300">Home</li>
+                </a>
+                <li>|</li>
+                <a href="./shop.html  ">
+                    <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Shop</li>
+                </a>
+                <li>|</li>
+                <a href="./about.html">
+                    <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">About</li>
+                </a>
+                <li>|</li>
+                <a href="#">
+                    <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Contact</li>
+                </a>
+            </ul>
+            
+            <!-- [3] Search Form - [START] -->
+            <form id="topBar__search--form" class="items-center max-[1220px]:hidden border-b-[1px] border-black ml-[60px] max-[1400px]:ml-[0px]">
+                <!-- Search Icon with Input Field -->
+                <div class="relative w-full">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    </div> 
+                    <!-- wow -->
+                    <input type="text" id="search" class="w-96 pl-10 p-2.5" placeholder="| Search for a product" required>
+                </div>
+            </form>
+            <!-- [3] Search Form - [END] -->
+
+            <!-- [4] Shopping Cart & Favorites Buttons - [START] -->
+            <div id="icons" class="absolute flex right-[30px] max-[1200px]:right-[80px]">
+                <svg id="sign-up" class="w-[30px] text-black transition duration-100 ease-in-out delay-150 rounded-lg cursor-pointer hover:-translate-y-1 hover:scale-100" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <path d="M8.5 3a4 4 0 1 0 0 8 4 4 0 1 0 0-8z"></path>
+                    <path d="M20 8v6"></path>
+                    <path d="M23 11h-6"></path>
+                  </svg>
+                <a id="shopping__cart" href="">
+                    <svg class="text-black transition duration-100 ease-in-out cursor-pointer delay-150rounded-lg hover:-translate-y-1 hover:scale-100"
+                    width="40" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 26 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.75 7.75h11.5l-1.637 6.958a2 2 0 0 1-1.947 1.542h-4.127a2 2 0 0 1-1.933-1.488L7.75 7.75Zm0 0-.75-3H4.75">
+                    </path>
+                    <path fill="currentColor" stroke="none" d="M10 18a1 1 0 1 0 0 2 1 1 0 1 0 0-2z"></path>
+                    <path fill="currentColor" stroke="none" d="M17 18a1 1 0 1 0 0 2 1 1 0 1 0 0-2z"></path>
+                </svg>  
+                </a>
+                <svg class="text-black transition duration-100 ease-in-out delay-150 rounded-lg cursor-pointer hover:-translate-y-1 hover:scale-100"
+                width="35" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" viewBox="-3 0 30 25" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                </path>
+                  </svg>
+            </div>
+            <!-- [4] Shopping Cart & Favorites Buttons - [END] -->
+
+            <!-- [5] Hamburger Icon - [START] -->
+            <label class="md:hidden">
+                <input type="checkbox">
+                <span class="menu"> <span class="hamburger"></span></span>
+                <ul class="flex gap-6 font-semibold">
+                    <a href="./index.html">
+                        <li class="pb-[1px] transition ease-in-out border-b-2 border-black delay-50 hover:-translate-y-1 hover:scale-110 duration300">Home</li>
+                    </a>
+                    <li>|</li>
+                    <a href="./shop.html">
+                        <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Shop</li>
+                    </a>
+                    <li>|</li>
+                    <a href="./about.html">
+                        <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">About</li>
+                    </a>
+                    <li>|</li>
+                    <a href="#">
+                        <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Contact</li>
+                    </a>
+                </ul>
+            </label>
+            <!-- [5] Hamburger Icon - [END] -->
+        </div>
+        </div>
+
+        <!-- Header Text - Season, New Collection, Perfect Style & Button -->
+        <div class="flex flex-col items-center mt-[190px] leading-[70px] max-[800px]:ml-[0px] text-white">
+            <h2 id="season" class="text-[50px]">About</h2>
+            <h1 id="new__collection" class="text-[75px]">New Collection</h1>
+            <p id="collection__text" class="text-[30px]">Find the Perfect Style for You</p>
+            <a href="shop.html"><button  id="shopButton" class="w-[150px] h-auto text-[18px] bg-white rounded-full leading-[50px] text-black">Shop Now</button></a>
+        </div>
+
+    </header>
+    <main></main>
+    <footer></footer>
+</body>
+</html>

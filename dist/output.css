@@ -1039,16 +1039,16 @@ video {
   width: 275px;
 }
 
+.w-\[29px\]{
+  width: 29px;
+}
+
 .w-\[175px\]{
   width: 175px;
 }
 
 .w-\[260px\]{
   width: 260px;
-}
-
-.w-\[29px\]{
-  width: 29px;
 }
 
 .max-w-\[964px\]{
@@ -2134,22 +2134,6 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/images\/mainPage\/homeModel\.jpg\'\)\]{
-  background-image: url('/images/mainPage/homeModel.jpg');
-}
-
-.bg-\[url\(\'\/images\/maleModel\.jpg\'\)\]{
-  background-image: url('/images/maleModel.jpg');
-}
-
-.bg-\[url\(\'\/images\/femaleModel\.jpg\'\)\]{
-  background-image: url('/images/femaleModel.jpg');
-}
-
-.bg-\[url\(\'\/images\/shopModel\.jpg\'\)\]{
-  background-image: url('/images/shopModel.jpg');
-}
-
 .bg-\[url\(\'\/images\/MainPage\/homeModel\.jpg\'\)\]{
   background-image: url('/images/MainPage/homeModel.jpg');
 }
@@ -2160,6 +2144,10 @@ video {
 
 .bg-\[url\(\'\/images\/MainPage\/femaleModel\.jpg\'\)\]{
   background-image: url('/images/MainPage/femaleModel.jpg');
+}
+
+.bg-\[url\(\'\/images\/shopModel\.jpg\'\)\]{
+  background-image: url('/images/shopModel.jpg');
 }
 
 .decoration-slice{

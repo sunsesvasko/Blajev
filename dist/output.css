@@ -630,6 +630,10 @@ video {
   bottom: 0px;
 }
 
+.top-0{
+  top: 0px;
+}
+
 .right-\[30px\]{
   right: 30px;
 }
@@ -779,6 +783,10 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
 .ml-\[60px\]{
   margin-left: 60px;
 }
@@ -911,6 +919,10 @@ video {
   height: auto;
 }
 
+.h-full{
+  height: 100%;
+}
+
 .h-\[500px\]{
   height: 500px;
 }
@@ -921,6 +933,14 @@ video {
 
 .h-\[125px\]{
   height: 125px;
+}
+
+.h-\[40px\]{
+  height: 40px;
+}
+
+.h-\[90px\]{
+  height: 90px;
 }
 
 .h-\[800px\]{
@@ -1003,16 +1023,28 @@ video {
   width: 217px;
 }
 
+.w-\[40px\]{
+  width: 40px;
+}
+
+.w-\[200px\]{
+  width: 200px;
+}
+
+.w-\[500px\]{
+  width: 500px;
+}
+
+.w-\[90px\]{
+  width: 90px;
+}
+
 .w-\[150px\]{
   width: 150px;
 }
 
 .w-\[600px\]{
   width: 600px;
-}
-
-.w-\[40px\]{
-  width: 40px;
 }
 
 .w-\[350px\]{
@@ -1035,16 +1067,8 @@ video {
   width: 1000px;
 }
 
-.w-\[500px\]{
-  width: 500px;
-}
-
 .w-\[20px\]{
   width: 20px;
-}
-
-.w-\[200px\]{
-  width: 200px;
 }
 
 .w-\[15px\]{
@@ -1615,6 +1639,14 @@ video {
   gap: 3rem;
 }
 
+.gap-4{
+  gap: 1rem;
+}
+
+.gap-8{
+  gap: 2rem;
+}
+
 .gap-\[25px\]{
   gap: 25px;
 }
@@ -1928,6 +1960,14 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-sm{
+  border-radius: 0.125rem;
+}
+
+.rounded-2xl{
+  border-radius: 1rem;
+}
+
 .rounded-\[10px\]{
   border-radius: 10px;
 }
@@ -2096,6 +2136,16 @@ video {
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
+.border-gray-100{
+  --tw-border-opacity: 1;
+  border-color: rgb(243 244 246 / var(--tw-border-opacity));
+}
+
+.border-gray-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
+}
+
 .border-\[\#2091f9\]{
   --tw-border-opacity: 1;
   border-color: rgb(32 145 249 / var(--tw-border-opacity));
@@ -2170,9 +2220,44 @@ video {
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#f1ede1\]{
+.bg-slate-500{
   --tw-bg-opacity: 1;
-  background-color: rgb(241 237 225 / var(--tw-bg-opacity));
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.bg-red-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
+.bg-gray-50{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
+.bg-gray-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#d3d0c8\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(211 208 200 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#ffffff\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f5f5f5\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#2091f9\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 145 249 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#f3f4f5\]{
@@ -2188,11 +2273,6 @@ video {
 .bg-\[\#bdbdbd\]{
   --tw-bg-opacity: 1;
   background-color: rgb(189 189 189 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#2091f9\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(32 145 249 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#E3DAF4\]{
@@ -2403,12 +2483,12 @@ video {
   padding: 0.625rem;
 }
 
-.p-\[10px\]{
-  padding: 10px;
-}
-
 .p-\[8px\]{
   padding: 8px;
+}
+
+.p-\[10px\]{
+  padding: 10px;
 }
 
 .px-10{
@@ -2434,6 +2514,26 @@ video {
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.px-\[4px\]{
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .pl-3{
@@ -2564,6 +2664,11 @@ video {
   line-height: 1rem;
 }
 
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-\[25px\]{
   font-size: 25px;
 }
@@ -2578,6 +2683,14 @@ video {
 
 .text-\[28px\]{
   font-size: 28px;
+}
+
+.text-\[14px\]{
+  font-size: 14px;
+}
+
+.text-\[12px\]{
+  font-size: 12px;
 }
 
 .text-\[50px\]{
@@ -2604,20 +2717,12 @@ video {
   font-size: 15px;
 }
 
-.text-\[12px\]{
-  font-size: 12px;
-}
-
 .text-\[13px\]{
   font-size: 13px;
 }
 
 .text-\[24px\]{
   font-size: 24px;
-}
-
-.text-\[14px\]{
-  font-size: 14px;
 }
 
 .font-bold{
@@ -2744,6 +2849,16 @@ video {
 .text-gray-300{
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.text-gray-900{
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.text-\[\#252a41\]{
+  --tw-text-opacity: 1;
+  color: rgb(37 42 65 / var(--tw-text-opacity));
 }
 
 .text-\[\#252b43\]{
@@ -2966,6 +3081,18 @@ video {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) !important;
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color) !important;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+}
+
+.shadow-md{
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-sm{
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .outline-none{
@@ -3528,6 +3655,99 @@ button.collapsible.active:after {
   }
 }
 
+/* ================== Contact Page ================== */
+
+#contact {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .01em solid transparent;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0px;
+  /* Adjust as needed */
+  animation: 
+    contact 3.5s steps(50, end),
+    blink-caret .75s step-end 8;
+}
+
+@keyframes contact {
+  from {
+    width: 0px
+  }
+
+  to {
+    width: 114.13px
+  }
+}
+
+#help {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .01em solid transparent;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0px;
+  /* Adjust as needed */
+  animation: 
+    help 3.5s steps(50, end),
+    blink-caret .75s step-end 8;
+}
+
+@keyframes help {
+  from {
+    width: 0px
+  }
+
+  to {
+    width: 368.22px
+  }
+}
+
+#inTouch {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .01em solid transparent;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0px;
+  /* Adjust as needed */
+  animation: 
+    inTouch 3.5s steps(50, end),
+    blink-caret .75s step-end 8;
+}
+
+@keyframes inTouch {
+  from {
+    width: 0px
+  }
+
+  to {
+    width: 143.36px
+  }
+}
+
+.contact--header, .about--header {
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.placeholder\:text-\[12px\]::-moz-placeholder{
+  font-size: 12px;
+}
+
+.placeholder\:text-\[12px\]::placeholder{
+  font-size: 12px;
+}
+
 .placeholder\:text-gray-600::-moz-placeholder{
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
@@ -3842,6 +4062,20 @@ button.collapsible.active:after {
   }
 }
 
+@media (max-width: 680px){
+  .max-\[680px\]\:w-\[450px\]{
+    width: 450px;
+  }
+
+  .max-\[680px\]\:w-\[400px\]{
+    width: 400px;
+  }
+
+  .max-\[680px\]\:w-\[100px\]{
+    width: 100px;
+  }
+}
+
 @media (max-width: 660px){
   .max-\[660px\]\:hidden{
     display: none;
@@ -3956,4 +4190,4 @@ button.collapsible.active:after {
   .min-\[2000px\]\:h-\[400px\]{
     height: 400px;
   }
-} 
+}

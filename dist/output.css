@@ -4063,10 +4063,6 @@ button.collapsible.active:after {
 }
 
 @media (max-width: 680px){
-  .max-\[680px\]\:w-\[450px\]{
-    width: 450px;
-  }
-
   .max-\[680px\]\:w-\[400px\]{
     width: 400px;
   }

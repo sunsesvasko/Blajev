@@ -19,7 +19,7 @@ const displayLatestProducts = function() {
           <!-- Back of the Card -->
           <div id="flip-card-back">
               <img src="/images/product.jpg" class="relative w-auto h-auto rounded-[10px] blur-[3px]">
-              <a href="#" id="product-page" class="absolute top-[20%] left-[20%] bg-white text-black border-[1px] border-gray-500 p-[10px] w-auto blur-none hover:bg-[#ffffffd2]"><button id="open-modal">Change</button></a>
+              <a href="#" id="product-page" class="absolute top-[25%] left-[29%] bg-white text-black border-[1px] border-gray-500 p-[10px] w-auto blur-none hover:bg-[#ffffffd2]"><button id="open-modal">Change</button></a>
           </div>
       </div>
   </div>`;
@@ -39,12 +39,6 @@ if(localStorage.getItem('user')) {
 }
 
 
+// ---
 
-// LogOut
-// localStorage.removeItem('user);
-
-// TO-DO: 
-// Implement displaying random products instead of fixed
-
-// Generate Latest Products - [END] 
 

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Title -->
+    <title>Blajev Style</title>
+    <!-- Meta Links -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TailWindCSS File -->
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body class="bg-[#f3f4f5] "> 
+    <!--=============/ 
+     [1.] Landing Page
+    /==============-->
+    <header id="header" class="relative h-[800px] w-full bg-[url('/images/MainPage/homeModel.jpg')] bg-cover bg-[center_top_0rem] bg-no-repeat">
+        <div class="bg-white border-b-[1px] border-gray-500">
+        <!-- TopBar Container -->
+        <div id="topBar" class="relative flex items-center justify-start gap-10 p-6">
+            <!-- [1] Logo -->
+            <a id="topBar__logo" class="p-1 font-mono text-3xl font-bold text-black border-2 border-black" href="./index.html">Blajev Style</a>
+
+            <!-- [2] Page LInks -->
+            <ul class="flex justify-around gap-6 font-semibold text-black pl-[50px] max-[1400px]:pl-[0px] max-[850px]:hidden">
+                <a href="./index.html">
+                    <li class="pb-[1px] transition ease-in-out border-b-2 border-black delay-50 hover:-translate-y-1 hover:scale-110 duration300">Home</li>
+                </a>
+                <li>|</li>
+                <a href="./shop.html">
+                    <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Shop</li>
+                </a>
+                <li>|</li>
+                <a href="./about.html">
+                    <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">About</li>
+                </a>
+                <li>|</li>
+                <a href="./contact.html">
+                    <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Contact</li>
+                </a>
+            </ul>
+            
+            <!-- [3] Search Form - [START] -->
+            <form id="topBar__search--form" class="items-center max-[1220px]:hidden border-b-[1px] border-black ml-[60px] max-[1400px]:ml-[0px]">
+                <!-- Search Icon with Input Field -->
+                <div class="relative w-full">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    </div> 
+                    <!-- wow -->
+                    <input type="text" id="search" class="w-96 pl-10 p-2.5" placeholder="| Search for a product" required>
+                </div>
+            </form>
+            <!-- [3] Search Form - [END] -->
+
+            <!-- [4] Shopping Cart & Favorites Buttons - [START] -->
+            <div id="icons" class="absolute flex right-[30px] max-[850px]:right-[80px]">
+                <a id="shopping__cart" href="">
+                    <svg class="text-black transition duration-100 ease-in-out cursor-pointer delay-150rounded-lg hover:-translate-y-1 hover:scale-100"
+                    width="40" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 26 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.75 7.75h11.5l-1.637 6.958a2 2 0 0 1-1.947 1.542h-4.127a2 2 0 0 1-1.933-1.488L7.75 7.75Zm0 0-.75-3H4.75">
+                    </path>
+                    <path fill="currentColor" stroke="none" d="M10 18a1 1 0 1 0 0 2 1 1 0 1 0 0-2z"></path>
+                    <path fill="currentColor" stroke="none" d="M17 18a1 1 0 1 0 0 2 1 1 0 1 0 0-2z"></path>
+                </svg>  
+                </a>
+                <svg class="text-black transition duration-100 ease-in-out delay-150 rounded-lg cursor-pointer hover:-translate-y-1 hover:scale-100"
+                width="35" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" viewBox="-3 0 30 25" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                </path>
+                  </svg>
+            </div>
+            <!-- [4] Shopping Cart & Favorites Buttons - [END] -->
+
+            <!-- [5] Hamburger Icon - [START] -->
+            <label class="min-[850px]:hidden">
+                <input type="checkbox">
+                <span class="menu"> <span class="hamburger"></span></span>
+                <ul class="flex gap-6 font-semibold">
+                    <a href="./index.html">
+                        <li class="pb-[1px] transition ease-in-out border-b-2 border-black delay-50 hover:-translate-y-1 hover:scale-110 duration300">Home</li>
+                    </a>
+                    <li>|</li>
+                    <a href="./shop.html">
+                        <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Shop</li>
+                    </a>
+                    <li>|</li>
+                    <a href="./about.html">
+                        <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">About</li>
+                    </a>
+                    <li>|</li>
+                    <a href="./contact.html">
+                        <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Contact</li>
+                    </a>
+                </ul>
+            </label>
+            <!-- [5] Hamburger Icon - [END] -->
+        </div>
+        </div>
+
+        <!-- Header Text - Season, New Collection, Perfect Style & Button -->
+        <div class="flex flex-col items-center mt-[190px] leading-[70px] max-[800px]:ml-[0px] text-white">
+            <h2 id="season" class="text-[50px]">Spring 2023</h2>
+            <h1 id="new__collection" class="text-[75px]">New Collection</h1>
+            <p id="collection__text" class="text-[30px]">Find the Perfect Style for You</p>
+            <a href="shop.html"><button  id="shopButton" class="w-[150px] h-auto text-[18px] bg-white rounded-full leading-[50px] text-black">Shop Now</button></a>
+        </div>
+
+    </header>
+    <!--=============/ 
+     [2.] Main Content
+    /==============-->
+    <main class="relative">s
+        <!-- [1.] Gender Section -->
+        <section class="flex justify-center items-center z-[-1] h-[600px] max-[2000px]:h-[500px] max-[1600px]:h-[400px]
+        max-[825px]:flex-col max-[825px]:h-[500px]">
+            <!-- Male Gender Container -->
+            <div class="relative">
+                <!-- Model Img -->
+                <div class="w-[600px] h-[300px] min-[2000px]:h-[400px] max-[2000px]:w-[500px] max-[1600px]:w-[400px] max-[1600px]:h-[266.66px] max-[1000px]:w-[300px] max-[1000px]:h-[200px] min-[825px]:rounded-tl-xl min-[825px]:rounded-bl-xl max-[825px]:rounded-tl-xl max-[825px]:rounded-tr-xl bg-[url('/images/MainPage/maleModel.jpg')] bg-cover bg-center ">
+                </div>
+                <!-- Proceed Button -->
+                <a id="firstArrowButton" class="absolute bottom-[13px] right-[15px] text-white border-2 rounded-full" href="./shop.html">
+                    <svg class="w-[40px] h-auto pl-[3px] max-[2000px]:w-[35px] max-[1600px]:w-[30px]" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9 18 6-6-6-6"></path>
+                  </svg></a>
+                 <!--Model Img Text  -->
+                <p class="absolute bottom-[15px] left-[20px] text-white text-xl max-[2000px]:text-lg font-semibold">
+                Men</p>
+            </div>
+            <!-- Female Gender Container -->
+            <div class="relative">
+                <!-- Model Img -->
+                <div class="w-[600px] h-[300px] min-[2000px]:h-[400px] max-[2000px]:w-[500px] max-[1600px]:w-[400px] max-[1600px]:h-[266.66px] max-[1000px]:w-[300px] max-[1000px]:h-[200px] min-[825px]:rounded-tr-xl min-[825px]:rounded-br-xl max-[825px]:rounded-bl-xl max-[825px]:rounded-br-xl bg-[url('/images/MainPage/femaleModel.jpg')] bg-cover bg-center">
+                </div>           
+                <!-- Proceed Button -->
+                <a id="secondArrowButton" class="absolute bottom-[13px] right-[15px] text-white border-2 rounded-full" href="./shop.html">
+                    <svg class="w-[40px] h-auto pl-[3px] max-[2000px]:w-[35px] max-[1600px]:w-[30px]" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9 18 6-6-6-6"></path>
+                  </svg></a>
+                <!-- Model Img Text -->
+                <p class="absolute bottom-[15px] left-[20px] text-white text-xl max-[2000px]:text-lg font-semibold">
+                    Women</p>
+            </div>
+        </section>
+        <!-- [2.] Featured Products Section -->
+        <section class="relative flex flex-col items-center gap-[25px] mb-[30px]">
+            <!-- Featured Products Text -->
+            <h2 class="text-[30px] font-bold text-[#252b43]">Featured Products</h2>
+            <!-- All Featured Products -->
+            <div class="flex relative gap-[40px] max-[1400px]:gap-[30px] max-[1000px]:gap-[20px] max-[825px]:flex-col">
+                <!-- [1.] Featured Product -->
+                <div>
+                    <!-- Flip Card on Hover Effect -->
+                    <div id="flip-card" class="w-[350px] h-[525px] max-[1400px]:w-[300px] max-[1400px]:h-[447px] max-[1000px]:w-[250px] max-[1000px]:h-[372px]">
+                        <!-- Front & Back Container -->
+                        <div id="flip-card-inner">
+                            <!-- Front of the Card -->
+                            <div id="flip-card-front" class="rounded-[10px]">
+                                <img src="/images/MainPage/left.jpg" class="w-auto h-auto rounded-[10px]">
+                            </div>
+                            <!-- Back of the Card -->
+                            <div id="flip-card-back">
+                                <img src="/images/MainPage/left.jpg" class="relative w-[350px] h-auto rounded-[10px] blur-[3px] max-[1400px]:w-[300px]">
+                                <a href="#" id="add-to-cart" class="absolute top-[45%] max-[1200px]:top-[40%] left-[33%] max-[1200px]:left-[31%] bg-white text-black border-[1px] border-gray-500 p-[10px] w-[121.11px] max-[1400px]:w-[108.72px] max-[1400px]:text-[14px] max-[1000px]:w-[96.33px] max-[1000px]:text-[12px] blur-none hover:bg-[#ffffffd2]">Change</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Description -->
+                    <p class="text-center">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                    <!-- Product Price -->
+                    <p class="text-[20px] mb-[3px] text-center">$32.00</p>
+                </div>
+                <!-- [2.] Featured Product -->
+                <div>
+                    <!-- Flip Card on Hover Effect -->
+                    <div id="flip-card" class="w-[350px] h-[525px] max-[1400px]:w-[300px] max-[1400px]:h-[447px] max-[1000px]:w-[250px] max-[1000px]:h-[372px]">
+                        <!-- Front & Back Container -->
+                        <div id="flip-card-inner">
+                            <!-- Front of the Card -->
+                            <div id="flip-card-front" class="rounded-[10px]">
+                                <img src="/images/MainPage/middle.jpg" class="w-auto h-auto rounded-[10px]">
+                            </div>
+                            <!-- Back of the Card -->
+                            <div id="flip-card-back">
+                                <img src="/images/MainPage/middle.jpg" class="relative w-[350px] h-auto rounded-[10px] blur-[3px] max-[1400px]:w-[300px]">
+                                <a href="#" id="product-page" class="absolute top-[50%] max-[1200px]:top-[52%] left-[33%] max-[1200px]:left-[31%] bg-white text-black border-[1px] border-gray-500 p-[10px] w-auto max-[1400px]:text-[14px] max-[1000px]:text-[12px] blur-none hover:bg-[#ffffffd2]">Change</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Description -->
+                    <p class="text-center">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                    <!-- Product Price -->
+                    <p class="text-[20px] mb-[3px] text-center">$32.00</p>
+                </div>
+                <!-- [3.] Featured Product -->
+                <div>
+                    <!-- Flip Card on Hover Effect -->
+                    <div id="flip-card" class="w-[350px] h-[525px] max-[1400px]:w-[300px] max-[1400px]:h-[447px] max-[1000px]:w-[250px] max-[1000px]:h-[372px]">
+                        <!-- Front & Back Container -->
+                        <div id="flip-card-inner">
+                            <!-- Front of the Card -->
+                            <div id="flip-card-front" class="rounded-[10px]">
+                                <img src="/images/MainPage/right.jpg" class="w-auto h-auto rounded-[10px]">
+                            </div>
+                            <!-- Back of the Card -->
+                            <div id="flip-card-back">
+                                <img src="/images/MainPage/right.jpg" class="relative w-[350px] h-auto rounded-[10px] blur-[3px] max-[1400px]:w-[300px]">
+                                <a href="#" id="product-page" class="absolute top-[50%] max-[1200px]:top-[52%] left-[33%] max-[1200px]:left-[31%] bg-white text-black border-[1px] border-gray-500 p-[10px] w-auto max-[1400px]:text-[14px] max-[1000px]:text-[12px] blur-none hover:bg-[#ffffffd2]">Change</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Description -->
+                    <p class="text-center">Men's Essential Tee <span class="opacity-[0.5]">(Black)</span></p>
+                    <!-- Product Price -->
+                    <p class="text-[20px] mb-[3px] text-center">$32.00</p>
+                </div>
+            </div>
+        </section>
+        <!-- [3.] Latest Products Section -->
+        <section class="relative flex flex-col items-center gap-[25px] mb-[30px] m-[20px] h-auto">
+            <h2 class="text-[30px] font-bold text-[#252b43]">Latest Products</h2>
+            <!-- First Row -->
+            <div class="latestProducts--firstRow flex gap-[40px] max-[825px]:flex-col"> 
+            </div>
+            <!-- Second Row -->
+            <div class="latestProducts--secondRow flex gap-[40px] max-[825px]:flex-col">  
+            </div>
+        </section>
+    </main>
+    <!--=============/ 
+     [3.] Footer
+    /==============-->
+    <footer class="relative flex items-center justify-center w-full h-[125px] bg-white border-t-[1px] border-gray-500">
+        <h1 id="topBar__logo" class="p-1 mr-10 font-mono text-3xl font-bold text-black border-2 border-black max-[660px]:hidden">Blajev Style</h1>
+        <ul class="flex justify-center gap-[25px] text-lg font-medium">
+            <a href="./index.html">
+                <li class="transition ease-in-out border-b-2 border-black delay-50 hover:-translate-y-1 hover:scale-110 duration300">Home</li>
+            </a>
+            <li>|</li>
+            <a href="./shop.html">
+                <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Shop</li>
+            </a>
+            <li>|</li>
+            <a href="./about.html">
+                <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">About</li>
+            </a>
+            <li>|</li>
+            <a href="./contact.html">
+                <li class="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration300">Contact</li>
+            </a>
+        </ul>
+    </footer>
+    <script src="../JS/indexAdmin.js"></script>
+    <script type="module" src="../JS/signup.js"></script>
+</body>
+</html>
+<!-- TO-DO -->
+<!-- 1. Add Small Details to Design to Make it Look More Sleek -->
+<!-- 2. Add a Back-to-Top Button -->
+<!-- 3. Makes JS Work -->
+<!-- 4. Add More Comments -->
+<!-- 5. Make Hamburger Menu Work -->
+<!-- changes -->

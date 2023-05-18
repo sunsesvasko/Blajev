@@ -1,6 +1,6 @@
 # About the Project
 
-This is an interactive and dynamic online webstore.
+This is an interactive and dynamic online clothing store. 
 
 # Instructions
 
